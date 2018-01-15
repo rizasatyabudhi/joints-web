@@ -8157,6 +8157,40 @@ label.panel-block {
     background-color: transparent; }
     .app-header .navbar .navbar-brand .navbar-item img {
       max-height: 2.25rem; }
+    .app-header .navbar .navbar-brand .navbar-burger span {
+      background-color: white; }
+    .app-header .navbar .navbar-menu a.navbar-item {
+      color: white; }
+      .app-header .navbar .navbar-menu a.navbar-item:hover {
+        color: #e6e6e6; }
+      .app-header .navbar .navbar-menu a.navbar-item:active {
+        color: #e6e6e6; }
+    .app-header .navbar .navbar-menu.is-active a.navbar-item {
+      color: #4a4a4a; }
+      .app-header .navbar .navbar-menu.is-active a.navbar-item:active {
+        color: #f06562; }
+      .app-header .navbar .navbar-menu.is-active a.navbar-item:hover {
+        color: #f06562; }
+    .app-header .navbar.is-fixed-top {
+      background-color: white;
+      transition: all .2s linear;
+      box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1); }
+      .app-header .navbar.is-fixed-top .navbar-brand .navbar-item img {
+        max-height: 2.25rem; }
+      .app-header .navbar.is-fixed-top .navbar-brand .navbar-burger span {
+        background-color: #4a4a4a; }
+      .app-header .navbar.is-fixed-top .navbar-menu a.navbar-item {
+        color: #4a4a4a; }
+        .app-header .navbar.is-fixed-top .navbar-menu a.navbar-item:hover {
+          color: #f06562; }
+        .app-header .navbar.is-fixed-top .navbar-menu a.navbar-item:active {
+          color: #f06562; }
+      .app-header .navbar.is-fixed-top .navbar-menu.is-active a.navbar-item {
+        color: #4a4a4a; }
+        .app-header .navbar.is-fixed-top .navbar-menu.is-active a.navbar-item:active {
+          color: #f06562; }
+        .app-header .navbar.is-fixed-top .navbar-menu.is-active a.navbar-item:hover {
+          color: #f06562; }
 
 .app-content section.is-intro {
   background-color: #f06562;

@@ -7,7 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <style>
+    .hiddenUp {
+        transform: translateY(-100%);
+        transition: all .2s linear;
+    }
+    </style>
 </head>
 
 <body>
@@ -17,7 +22,7 @@
             <div class="container">
                 <div class="navbar-brand">
                     <a class="navbar-item">
-                        <img src="images/index/logo.png" alt="Logo">
+                        <img id="logoJoints" src="images/index/logo.png" alt="Logo">
                     </a>
                     <span class="navbar-burger burger" data-target="navbarMenuHeroC">
                         <span></span>
@@ -27,19 +32,19 @@
                 </div>
                 <div id="navbarMenuHeroC" class="navbar-menu">
                     <div class="navbar-end">
-                        <a class="navbar-item has-text-white">
+                        <a class="navbar-item">
                             IT Day
                         </a>
-                        <a class="navbar-item has-text-white">
+                        <a class="navbar-item">
                             Tech Talk
                         </a>
-                        <a class="navbar-item has-text-white" href="kompetisi.html">
+                        <a class="navbar-item" href="kompetisi.html">
                             Kompetisi
                         </a>
-                        <a class="navbar-item has-text-white">
+                        <a class="navbar-item">
                             Contact
                         </a>
-                        <a class="navbar-item has-text-white" href="">
+                        <a class="navbar-item" href="">
                             Login
                         </a>
                     </div>
@@ -227,6 +232,40 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+        // buka tutup navbar hamburger
+        $(".navbar-burger").click(function(){
+            $("#navbarMenuHeroC").toggleClass("is-active");
+        });
+        
+        var prev = 53;
+        // console.log(prev + " prev awal");
+
+        $(window).scroll(function () {
+            // nilai scroll
+            var wScroll = $(window).scrollTop();
+            // console.log(wScroll + " wScroll");
+            // console.log(prev + " prev akhir");
+        
+            // conditional navbar fixed dan logo joints
+            if (wScroll > 53) {
+                $(".navbar").addClass("is-fixed-top");                                
+                $("#logoJoints").attr("src","images/logo-pink.png");
+            } else {
+                $(".navbar").removeClass("is-fixed-top");
+                $("#logoJoints").attr("src","images/index/logo.png");
+            }
+
+            // conditional navbar muncul saat di scroll keatas
+            $(".navbar").toggleClass("hiddenUp", wScroll > prev);
+            prev = wScroll;
+
+        });
+    });
+    </script>
 
 </body>
 

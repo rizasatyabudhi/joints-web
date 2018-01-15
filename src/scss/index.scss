@@ -10,27 +10,81 @@
           max-height: 2.25rem;
         }
       }
+      .navbar-burger {
+        span {
+          background-color: white;
+        }
+      }
     }
-    // .navbar-item {
-    //   .navbar-link {
-    //     &:hover:after {
-    //       border: 1px solid #e6e6e6;
-    //       border-right: 0;
-    //       border-top: 0;
-    //       content: " ";
-    //       display: block;
-    //       height: 0.5em;
-    //       pointer-events: none;
-    //       position: absolute;
-    //       transform: rotate(-45deg);
-    //       transform-origin: center;
-    //       width: 0.5em;
-    //       margin-top: -0.375em;
-    //       right: 1.125em;
-    //       top: 50%;
-    //     }
-    //   }
-    // }
+    .navbar-menu {
+      a {
+        &.navbar-item {
+          color: white;
+          &:hover {
+            color: #e6e6e6;
+          }
+          &:active {
+            color: #e6e6e6;
+          }
+        }
+      }
+      &.is-active {
+        a {
+          &.navbar-item {
+            color: #4a4a4a;
+            &:active {
+              color: $pink;
+            }
+            &:hover {
+              color: $pink;
+            }
+          }
+        }
+      }
+    }
+    &.is-fixed-top {
+      background-color: white;
+      transition: all .2s linear;
+      box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
+      .navbar-brand {
+        .navbar-item {
+          img {
+            max-height: 2.25rem;
+          }
+        }
+        .navbar-burger {
+          span {
+            background-color: #4a4a4a;
+          }
+        }
+      }
+      .navbar-menu {
+        a {
+          &.navbar-item {
+            color: #4a4a4a;
+            &:hover {
+              color: $pink;
+            }
+            &:active {
+              color: $pink;
+            }
+          }
+        }
+        &.is-active {
+          a {
+            &.navbar-item {
+              color: #4a4a4a;
+              &:active {
+                color: $pink;
+              }
+              &:hover {
+                color: $pink;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 

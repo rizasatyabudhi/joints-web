@@ -44,9 +44,11 @@
                         <a class="navbar-item">
                             Contact
                         </a>
-                        <a class="navbar-item" href="">
-                            Login
-                        </a>
+                        <span class="navbar-item">
+                            <a id="loginButton" class="button is-inverted is-outlined">
+                              Log In
+                            </a>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -239,7 +241,11 @@
         // buka tutup navbar hamburger
         $(".navbar-burger").click(function(){
             $("#navbarMenuHeroC").toggleClass("is-active");
+            $(".navbar-burger > span").toggleClass("is-active");
         });
+
+        // mengganti login button menjadi warna pink
+        $("#loginButton").addClass("is-pink");
         
         var prev = 53;
         // console.log(prev + " prev awal");
@@ -252,10 +258,20 @@
         
             // conditional navbar fixed dan logo joints
             if (wScroll > 53) {
-                $(".navbar").addClass("is-fixed-top");                                
+                // navbar 
+                $(".navbar").addClass("is-fixed-top");
+                $(".navbar").removeClass("is-transparent");
+                // login button
+                $("#loginButton").removeClass("is-inverted");                                                                                               
+                // logo joints
                 $("#logoJoints").attr("src","images/logo-pink.png");
             } else {
+                // navbar
                 $(".navbar").removeClass("is-fixed-top");
+                $(".navbar").addClass("is-transparent");
+                // login button
+                $("#loginButton").addClass("is-inverted");                                                                                                                                                                                                
+                // logo joints
                 $("#logoJoints").attr("src","images/index/logo.png");
             }
 

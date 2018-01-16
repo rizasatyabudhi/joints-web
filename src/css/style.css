@@ -8156,9 +8156,23 @@ label.panel-block {
   .app-header .navbar {
     background-color: transparent; }
     .app-header .navbar .navbar-brand .navbar-item img {
-      max-height: 2.25rem; }
+      max-height: 2rem; }
     .app-header .navbar .navbar-brand .navbar-burger span {
-      background-color: white; }
+      background-color: white;
+      transition: transform .3s ease; }
+      .app-header .navbar .navbar-brand .navbar-burger span.is-active:nth-child(1) {
+        -webkit-transform: translateY(5px) rotate(45deg);
+        transform: translateY(5px) rotate(45deg);
+        transition: all .3s ease; }
+      .app-header .navbar .navbar-brand .navbar-burger span.is-active:nth-child(2) {
+        -webkit-transform: translateX(-15px);
+        transform: translateX(-15px);
+        opacity: 0;
+        transition: transform 0.3s, ease opacity 0.7s; }
+      .app-header .navbar .navbar-brand .navbar-burger span.is-active:nth-child(3) {
+        -webkit-transform: translateY(-5px) rotate(-45deg);
+        transform: translateY(-5px) rotate(-45deg);
+        transition: all .3s ease; }
     .app-header .navbar .navbar-menu a.navbar-item {
       color: white; }
       .app-header .navbar .navbar-menu a.navbar-item:hover {
@@ -8176,7 +8190,7 @@ label.panel-block {
       transition: all .2s linear;
       box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1); }
       .app-header .navbar.is-fixed-top .navbar-brand .navbar-item img {
-        max-height: 2.25rem; }
+        max-height: 2rem; }
       .app-header .navbar.is-fixed-top .navbar-brand .navbar-burger span {
         background-color: #4a4a4a; }
       .app-header .navbar.is-fixed-top .navbar-menu a.navbar-item {
@@ -8185,12 +8199,24 @@ label.panel-block {
           color: #f06562; }
         .app-header .navbar.is-fixed-top .navbar-menu a.navbar-item:active {
           color: #f06562; }
+      .app-header .navbar.is-fixed-top .navbar-menu a.has-text-success-reverse {
+        color: #4a4a4a; }
+        .app-header .navbar.is-fixed-top .navbar-menu a.has-text-success-reverse:hover {
+          color: #3abb69; }
+        .app-header .navbar.is-fixed-top .navbar-menu a.has-text-success-reverse:active {
+          color: #3abb69; }
       .app-header .navbar.is-fixed-top .navbar-menu.is-active a.navbar-item {
         color: #4a4a4a; }
         .app-header .navbar.is-fixed-top .navbar-menu.is-active a.navbar-item:active {
           color: #f06562; }
         .app-header .navbar.is-fixed-top .navbar-menu.is-active a.navbar-item:hover {
           color: #f06562; }
+        .app-header .navbar.is-fixed-top .navbar-menu.is-active a.navbar-item.has-text-success-reverse {
+          color: #4a4a4a; }
+          .app-header .navbar.is-fixed-top .navbar-menu.is-active a.navbar-item.has-text-success-reverse:hover {
+            color: #3abb69; }
+          .app-header .navbar.is-fixed-top .navbar-menu.is-active a.navbar-item.has-text-success-reverse:active {
+            color: #3abb69; }
 
 .app-content section.is-intro {
   background-color: #f06562;

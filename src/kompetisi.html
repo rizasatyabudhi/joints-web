@@ -7,16 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .hiddenUp {
+      transform: translateY(-100%);
+      transition: all .2s linear;
+    }
+  </style>
 </head>
 
 <body>
+  <!-- Header -->
   <!-- Header -->
   <header class="app-header">
     <nav class="navbar is-transparent">
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item">
-            <img src="images/index/logo.png" alt="Logo">
+            <img id="logoJoints" src="images/index/logo.png" alt="Logo">
           </a>
           <span class="navbar-burger burger" data-target="navbarMenuHeroC">
             <span></span>
@@ -26,20 +33,20 @@
         </div>
         <div id="navbarMenuHeroC" class="navbar-menu">
           <div class="navbar-end">
-            <a class="navbar-item has-text-white">
+            <a class="navbar-item">
               IT Day
             </a>
-            <a class="navbar-item has-text-white">
+            <a class="navbar-item">
               Tech Talk
             </a>
-            <a class="navbar-item has-text-white">
+            <a class="navbar-item" href="kompetisi.html">
               Kompetisi
             </a>
-            <a class="navbar-item has-text-white">
+            <a class="navbar-item">
               Contact
             </a>
             <span class="navbar-item">
-              <a class="button is-success is-inverted is-outlined">
+              <a id="loginButton" class="button is-inverted is-outlined">
                 Log In
               </a>
             </span>
@@ -74,7 +81,6 @@
         </div>
       </div>
     </section>
-    <!-- <div class="clipping-top"></div> -->
     <!-- Acara -->
     <section class="hero is-medium is-acara">
       <div class="hero-body">
@@ -131,7 +137,6 @@
         </div>
       </div>
     </section>
-    <!-- <div class="clipping-bottom"></div> -->
     <!-- Timeline -->
     <section class="hero is-medium is-timeline-kompetisi">
       <div class="hero-body">
@@ -231,6 +236,55 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script>
+    $(document).ready(function () {
+      // buka tutup navbar hamburger
+      $(".navbar-burger").click(function () {
+        $("#navbarMenuHeroC").toggleClass("is-active");
+        $(".navbar-burger > span").toggleClass("is-active");
+      });
+
+      // mengganti login button menjadi warna hijau
+      $("#loginButton").addClass("is-success");   
+
+      var prev = 53;
+      // console.log(prev + " prev awal");
+
+      $(window).scroll(function () {
+        // nilai scroll
+        var wScroll = $(window).scrollTop();
+        // console.log(wScroll + " wScroll");
+        // console.log(prev + " prev akhir");
+
+        // conditional navbar fixed dan logo joints
+        if (wScroll > 53) {
+          // navbar
+          $(".navbar").addClass("is-fixed-top");
+          $(".navbar").removeClass("is-transparent");
+          // mennganti menjadi warna hijau
+          $(".navbar-item").addClass("has-text-success-reverse");          
+          // login button
+          $("#loginButton").removeClass("is-inverted");       
+          // logo joints
+          $("#logoJoints").attr("src", "images/logo-hijau.png");
+        } else {
+          // navbar
+          $(".navbar").removeClass("is-fixed-top");
+          $(".navbar").addClass("is-transparent");
+          // login button
+          $("#loginButton").addClass("is-inverted");
+          // logo joints
+          $("#logoJoints").attr("src", "images/index/logo.png");
+        }
+
+        // conditional navbar muncul saat di scroll keatas
+        $(".navbar").toggleClass("hiddenUp", wScroll > prev);
+        prev = wScroll;
+
+      });
+    });
+  </script>
 </body>
 
 

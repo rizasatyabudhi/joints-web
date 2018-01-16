@@ -7,12 +7,31 @@
     .navbar-brand {
       .navbar-item {
         img {
-          max-height: 2.25rem;
+          max-height: 2rem;
         }
       }
       .navbar-burger {
         span {
           background-color: white;
+          transition: transform .3s ease;
+          &.is-active {
+            &:nth-child(1) {
+              -webkit-transform: translateY(5px) rotate(45deg);
+              transform: translateY(5px) rotate(45deg);
+              transition: all .3s ease;
+            }
+            &:nth-child(2) {
+              -webkit-transform: translateX(-15px);
+              transform: translateX(-15px);
+              opacity: 0;
+              transition: transform 0.3s, ease opacity 0.7s;
+            }
+            &:nth-child(3) {
+              -webkit-transform: translateY(-5px) rotate(-45deg);
+              transform: translateY(-5px) rotate(-45deg);
+              transition: all .3s ease;
+            }
+          }
         }
       }
     }
@@ -49,7 +68,7 @@
       .navbar-brand {
         .navbar-item {
           img {
-            max-height: 2.25rem;
+            max-height: 2rem;
           }
         }
         .navbar-burger {
@@ -69,6 +88,15 @@
               color: $pink;
             }
           }
+          &.has-text-success-reverse {
+            color: #4a4a4a;
+            &:hover {
+              color: $green;
+            }
+            &:active {
+              color: $green;
+            }
+          }
         }
         &.is-active {
           a {
@@ -79,6 +107,15 @@
               }
               &:hover {
                 color: $pink;
+              }
+              &.has-text-success-reverse {
+                color: #4a4a4a;
+                &:hover {
+                  color: $green;
+                }
+                &:active {
+                  color: $green;
+                }
               }
             }
           }

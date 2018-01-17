@@ -77,3 +77,14 @@ img.image {
     padding-right: 54px;
   }
 }
+@media only screen and (max-width: 320px) {
+  .drinkcard-cc.joints {
+    margin-bottom: 84px;
+  }
+  /* .cc-selector {
+    padding-left: 29px;
+  } */
+  /* * {
+    display: none;
+  } */
+}

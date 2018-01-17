@@ -1,15 +1,17 @@
-.app-content-kompetisi {
+.app-content-ccomp {
   section {
     // intro
     &.is-intro-kompetisi {
-      background-color: #089d95;
+      background: #36d1dc;
       background: url(../images/kompetisi/wave.png),
-        linear-gradient(300deg, #089d95, #65cb67);
+        -webkit-linear-gradient(300deg, #36d1dc, #5b86e5);
+      background: url(../images/kompetisi/wave.png),
+        linear-gradient(300deg, #36d1dc, #5b86e5);
       background-size: 100%, cover, cover;
       background-repeat: no-repeat;
       background-position: bottom;
-      .img-kompetisi {
-        width: 550px; // margin-left: 60px;
+      img {
+        width: 15%;
       }
     }
     &.is-acara {
@@ -67,18 +69,12 @@
             }
           }
         }
-        .box {
-          transition: box-shadow 0.3s;
-        }
-        .box:hover {
-          box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
-        }
       }
     }
 
-    &.is-timeline-kompetisi {
-      background-color: #cdefde;
-      background: linear-gradient(to bottom, #cdefde, #fff);
+    &.is-timeline-ccomp {
+      background-color: #36d1dc;
+      background: linear-gradient(to bottom, #36d1dc, #fff);
       background-size: auto auto;
       background-size: cover;
     }
@@ -112,9 +108,9 @@
   }
 }
 
-.app-footer-kompetisi {
-  background-color: #089d95;
-  background: linear-gradient(300deg, #089d95, #65cb67);
+.app-footer-ccomp {
+  background-color: #36d1dc;
+  background: linear-gradient(300deg, #36d1dc, #5b86e5);
   padding: 3rem 1rem;
   .container {
     .content {

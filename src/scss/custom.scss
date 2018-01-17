@@ -3,8 +3,7 @@
 @import "node_modules/bulma/sass/utilities/initial-variables";
 @import "node_modules/bulma/sass/utilities/functions";
 @import "node_modules/bulma/sass/utilities/mixins";
-@import 'node_modules/bulma-extensions/bulma-badge/bulma-badge';
-
+@import "node_modules/bulma-extensions/bulma-badge/bulma-badge";
 
 // INITIAL VARIABLES
 $white: #fff;
@@ -42,7 +41,7 @@ $addColors: (
   "purple": ($purple, $purple-invert),
   "pink": ($pink, $pink-invert),
   "orange":($orange, $orange-invert),
-  "light-green":($light-green,$light-green-invert)
+  "light-green":($light-green, $light-green-invert)
 );
 $colors: map-merge($colors, $addColors);
 // EDIT

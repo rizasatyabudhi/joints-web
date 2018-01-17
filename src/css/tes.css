@@ -68,3 +68,12 @@ p {
 img.image {
   margin: auto;
 }
+
+@media only screen and (max-width: 622px) {
+  .drinkcard-cc.joints {
+    margin-bottom: 84px;
+  }
+  .cc-selector {
+    padding-right: 54px;
+  }
+}

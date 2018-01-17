@@ -90,5 +90,11 @@ $label-weight: 300;
   }
 }
 
+// Hide navbar
+.hiddenUp {
+  transform: translateY(-100%);
+  transition: all .2s linear;
+}
+
 // 6. Import the rest of Bulma
 @import "node_modules/bulma/bulma";

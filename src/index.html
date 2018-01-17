@@ -7,12 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        .hiddenUp {
-            transform: translateY(-100%);
-            transition: all .2s linear;
-        }
-    </style>
 </head>
 
 <body>
@@ -236,52 +230,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-    <script>
-        $(document).ready(function () {
-            // buka tutup navbar hamburger
-            $(".navbar-burger").click(function () {
-                $("#navbarMenuHeroC").toggleClass("is-active");
-                $(".navbar-burger > span").toggleClass("is-active");
-            });
-
-            // mengganti login button menjadi warna pink
-            $("#loginButton").addClass("is-pink");
-
-            var prev = 53;
-            // console.log(prev + " prev awal");
-
-            $(window).scroll(function () {
-                // nilai scroll
-                var wScroll = $(window).scrollTop();
-                // console.log(wScroll + " wScroll");
-                // console.log(prev + " prev akhir");
-
-                // conditional navbar fixed dan logo joints
-                if (wScroll > 53) {
-                    // navbar
-                    $(".navbar").addClass("is-fixed-top");
-                    $(".navbar").removeClass("is-transparent");
-                    // login button
-                    $("#loginButton").removeClass("is-inverted");
-                    // logo joints
-                    $("#logoJoints").attr("src", "images/logo-pink.png");
-                } else {
-                    // navbar
-                    $(".navbar").removeClass("is-fixed-top");
-                    $(".navbar").addClass("is-transparent");
-                    // login button
-                    $("#loginButton").addClass("is-inverted");
-                    // logo joints
-                    $("#logoJoints").attr("src", "images/index/logo.png");
-                }
-
-                // conditional navbar muncul saat di scroll keatas
-                $(".navbar").toggleClass("hiddenUp", wScroll > prev);
-                prev = wScroll;
-
-            });
-        });
-    </script>
+    <script src="js/index.js"></script>
 
 </body>
 

@@ -253,6 +253,10 @@
     .columns.is-reverse-mobile .column {
       width: 100%; } }
 
+.hiddenUp {
+  transform: translateY(-100%);
+  transition: all .2s linear; }
+
 /*! bulma.io v0.6.1 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -8267,7 +8271,7 @@ label.panel-block {
   background-color: #f06562;
   background: linear-gradient(135deg, #f06562, #e5487c);
   padding: 3rem 1rem; }
-  .app-footer.is-footer-detail {
+  .app-footer.is-footer-kategori {
     background: #089d95;
     background: -webkit-linear-gradient(300deg, #089d95, #65cb67);
     background: linear-gradient(300deg, #089d95, #65cb67);
@@ -8365,22 +8369,25 @@ label.panel-block {
     border-top: 1px solid #fff;
     padding-top: 1rem; }
 
-.app-content-detail section.is-intro {
+.app-content-kategori section.is-intro {
   background: #089d95;
   background: url(../images/kompetisi/wave.png), -webkit-linear-gradient(300deg, #089d95, #65cb67);
   background: url(../images/kompetisi/wave.png), linear-gradient(300deg, #089d95, #65cb67);
   background-size: 100%, cover, cover;
   background-repeat: no-repeat;
   background-position: bottom; }
-  .app-content-detail section.is-intro img {
+  .app-content-kategori section.is-intro img {
     width: 15%; }
+    @media screen and (max-width: 768px) {
+      .app-content-kategori section.is-intro img {
+        width: 30%; } }
 
-.app-content-detail section.is-hadiah {
+.app-content-kategori section.is-hadiah {
   background-color: #fafafa; }
-  .app-content-detail section.is-hadiah .column .box {
+  .app-content-kategori section.is-hadiah .column .box {
     margin-top: 80px;
     box-shadow: 0 5px 4px 0 rgba(219, 219, 219, 0.5); }
-    .app-content-detail section.is-hadiah .column .box .box-icon {
+    .app-content-kategori section.is-hadiah .column .box .box-icon {
       margin: 0 auto;
       height: 100px;
       width: 100px;
@@ -8390,17 +8397,17 @@ label.panel-block {
       position: relative;
       box-shadow: 0 5px 5px 0 rgba(219, 219, 219, 0.25);
       border: 1px solid rgba(219, 219, 219, 0.25); }
-      .app-content-detail section.is-hadiah .column .box .box-icon img {
+      .app-content-kategori section.is-hadiah .column .box .box-icon img {
         width: 100px;
         height: 100px;
         margin: 0 auto; }
 
-.app-content-detail section.is-timeline {
+.app-content-kategori section.is-timeline {
   background: #fff !important; }
 
-.app-content-detail section.is-lomba-lain {
+.app-content-kategori section.is-lomba-lain {
   background-color: #fafafa; }
-  .app-content-detail section.is-lomba-lain .box {
+  .app-content-kategori section.is-lomba-lain .box {
     box-shadow: 0 5px 4px 0 rgba(219, 219, 219, 0.5); }
 
 .app-content-ccomp section.is-intro-kompetisi {

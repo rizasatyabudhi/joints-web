@@ -7,16 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    .hiddenUp {
-      transform: translateY(-100%);
-      transition: all .2s linear;
-    }
-  </style>
 </head>
 
 <body>
-  <!-- Header -->
   <!-- Header -->
   <header class="app-header">
     <nav class="navbar is-transparent">
@@ -89,45 +82,45 @@
           <br>
           <div class="columns has-equal-heights has-text-centered">
             <div class="column  has-text-centered">
-              <div class="box">
+              <a class="box" href="pcs.html">
                 <img class="image is-64x64" src="images/kompetisi/pcs.png" alt="">
                 <span class="separator"></span>
                 <br>
                 <h5 class="subtitle">Programming Competition Session</h5>
-              </div>
+              </a>
             </div>
             <div class="column ">
-              <div class="box">
+              <a class="box" href="ctf.html">
                 <img class="image is-64x64" src="images/kompetisi/ctf.png" alt="">
                 <br>
                 <h5 class="subtitle">Capture
                   <br> The Flag</h5>
-              </div>
+              </a>
             </div>
             <div class="column ">
-              <div class="box">
+              <a class="box" href="data-mining.html">
                 <img class="image is-64x64" src="images/kompetisi/datamining.png" alt="">
                 <br>
                 <h5 class="subtitle">Data
                   <br> Mining</h5>
-              </div>
+              </a>
             </div>
             <div class="column ">
-              <div class="box">
+              <a class="box" href="business.html">
                 <img class="image is-64x64" src="images/kompetisi/business.png" alt="">
                 <br>
                 <h5 class="subtitle">Business IT Development</h5>
 
-              </div>
+              </a>
             </div>
             <div class="column ">
-              <div class="box">
+              <a class="box" href="apps-innovation.html">
                 <img class="image is-64x64" src="images/kompetisi/appdev.png" alt="">
                 <br>
                 <h5 class="subtitle">Apps
                   <br> Innovation</h5>
 
-              </div>
+              </a>
             </div>
 
           </div>
@@ -238,55 +231,9 @@
       </div>
     </div>
   </footer>
+  <!-- Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-  <script>
-    $(document).ready(function () {
-      // buka tutup navbar hamburger
-      $(".navbar-burger").click(function () {
-        $("#navbarMenuHeroC").toggleClass("is-active");
-        $(".navbar-burger > span").toggleClass("is-active");
-      });
-
-      // mengganti login button menjadi warna hijau
-      $("#loginButton").addClass("is-success");
-
-      var prev = 53;
-      // console.log(prev + " prev awal");
-
-      $(window).scroll(function () {
-        // nilai scroll
-        var wScroll = $(window).scrollTop();
-        // console.log(wScroll + " wScroll");
-        // console.log(prev + " prev akhir");
-
-        // conditional navbar fixed dan logo joints
-        if (wScroll > 53) {
-          // navbar
-          $(".navbar").addClass("is-fixed-top");
-          $(".navbar").removeClass("is-transparent");
-          // mennganti menjadi warna hijau
-          $(".navbar-item").addClass("has-text-success-reverse");
-          // login button
-          $("#loginButton").removeClass("is-inverted");
-          // logo joints
-          $("#logoJoints").attr("src", "images/logo-hijau.png");
-        } else {
-          // navbar
-          $(".navbar").removeClass("is-fixed-top");
-          $(".navbar").addClass("is-transparent");
-          // login button
-          $("#loginButton").addClass("is-inverted");
-          // logo joints
-          $("#logoJoints").attr("src", "images/index/logo.png");
-        }
-
-        // conditional navbar muncul saat di scroll keatas
-        $(".navbar").toggleClass("hiddenUp", wScroll > prev);
-        prev = wScroll;
-
-      });
-    });
-  </script>
+  <script src="js/kompetisi.js"></script>
 </body>
 
 

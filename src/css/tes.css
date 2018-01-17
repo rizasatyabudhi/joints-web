@@ -14,7 +14,7 @@
 
 .joints {
   /* background-image: url("../images/kompetisi/business.png"); */
-  background-image: url("../images/index/logo-2.png");
+  background-image: url("../images/logo-hijau.png");
 }
 
 .ctf {
@@ -45,7 +45,7 @@
   transition: all 0.3s ease-in;
   -webkit-filter: brightness(1.8) grayscale(1) opacity(0.7);
   -moz-filter: brightness(1.8) grayscale(1) opacity(0.7);
-  filter: brightness(1.8) grayscale(1) opacity(0.7);
+  filter: brightness(1) grayscale(1) opacity(0.7);
 }
 .drinkcard-cc:hover {
   -webkit-filter: brightness(1.2) grayscale(0.5) opacity(0.9);

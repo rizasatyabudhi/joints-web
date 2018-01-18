@@ -235,60 +235,7 @@
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-  <script>
-    $(document).ready(function () {
-      // buka tutup navbar hamburger
-      $(".navbar-burger").click(function () {
-        $("#navbarMenuHeroC").toggleClass("is-active");
-        $(".navbar-burger > span").toggleClass("is-active");
-      });
-
-      // mengganti login button menjadi warna hijau
-      $("#loginButton").addClass("is-success");
-
-      var prev = 53;
-      // console.log(prev + " prev awal");
-
-      $(window).scroll(function () {
-        // nilai scroll
-        var wScroll = $(window).scrollTop();
-        // console.log(wScroll + " wScroll");
-        // console.log(prev + " prev akhir");
-
-        // conditional navbar fixed dan logo joints
-        if (wScroll > 53) {
-          // navbar
-          $(".navbar").addClass("is-fixed-top");
-          $(".navbar").removeClass("is-transparent");
-          // mennganti menjadi warna hijau
-          $(".navbar-item").addClass("has-text-success-reverse");
-          // login button
-          $("#loginButton").removeClass("is-inverted");
-          // logo joints
-          $("#logoJoints").attr("src", "images/logo-hijau.png");
-        } else {
-          // navbar
-          $(".navbar").removeClass("is-fixed-top");
-          $(".navbar").addClass("is-transparent");
-          // login button
-          $("#loginButton").addClass("is-inverted");
-          // logo joints
-          $("#logoJoints").attr("src", "images/index/logo.png");
-        }
-
-        // conditional navbar muncul saat di scroll keatas
-        $(".navbar").toggleClass("hiddenUp", wScroll > prev);
-        prev = wScroll;
-
-      });
-
-      $("#selengkapnya").click(function () {
-        $('html, body').animate({
-          scrollTop: $("#lomba").offset().top
-        }, 1000);
-      });
-    });
-  </script>
+  <script src="js/ccomp.js"></script>
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script>
     AOS.init({

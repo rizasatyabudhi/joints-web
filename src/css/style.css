@@ -8209,6 +8209,12 @@ label.panel-block {
           color: #3abb69; }
         .app-header .navbar.is-fixed-top .navbar-menu a.has-text-success-reverse:active {
           color: #3abb69; }
+      .app-header .navbar.is-fixed-top .navbar-menu a.has-text-twitter-reverse {
+        color: #4a4a4a; }
+        .app-header .navbar.is-fixed-top .navbar-menu a.has-text-twitter-reverse:hover {
+          color: #55acee; }
+        .app-header .navbar.is-fixed-top .navbar-menu a.has-text-twitter-reverse:active {
+          color: #55acee; }
       .app-header .navbar.is-fixed-top .navbar-menu.is-active a.navbar-item {
         color: #4a4a4a; }
         .app-header .navbar.is-fixed-top .navbar-menu.is-active a.navbar-item:active {

@@ -10,8 +10,8 @@
       background-size: 100%, cover, cover;
       background-repeat: no-repeat;
       background-position: bottom;
-      img {
-        width: 15%;
+      .img-kompetisi {
+        width: 400px; // margin-left: 60px;
       }
     }
     &.is-acara {

@@ -8444,6 +8444,10 @@ label.panel-block {
     border-bottom: 2px solid #e84779; }
   .app-content-ccomp section.is-acara .columns .column:nth-child(5) .box::before {
     border-bottom: 2px solid #c12c74; }
+  .app-content-ccomp section.is-acara .columns .box {
+    transition: box-shadow 0.3s; }
+  .app-content-ccomp section.is-acara .columns .box:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2); }
 
 .app-content-ccomp section.is-timeline-ccomp {
   background-color: #5b86e5;

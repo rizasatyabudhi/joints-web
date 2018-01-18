@@ -5,6 +5,7 @@
     <title>Joints</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -56,7 +57,7 @@
             <div class="hero-body">
                 <div class="container">
                     <div class="columns is-vcentered is-reverse-mobile">
-                        <div class="column has-text-left">
+                        <div class="column has-text-left" data-aos="fade-right" data-aos-duration="1800">
                             <h1 class="title has-text-white is-size-1">
                                 Jogja Information
                                 <br> Technology Session
@@ -69,7 +70,7 @@
                             <a class="button is-purple is-rounded">Selengkapnya</a>
                         </div>
                         <div class="column">
-                            <img src="images/index/img.png" alt="">
+                            <img src="images/index/img.png" alt="" data-aos="fade-up" data-aos-duration="1800">
                         </div>
                     </div>
                 </div>
@@ -79,7 +80,7 @@
         <!-- Acara -->
         <section class="hero is-medium is-acara">
             <div class="hero-body">
-                <div class="container">
+                <div class="container" data-aos="fade-down" data-aos-duration="1800">
                     <h1 class="title has-text-centered has-text-pink">Rangkaian Acara</h1>
                     <br>
                     <div class="columns has-equal-heights has-text-centered">
@@ -131,7 +132,7 @@
         <!-- Timeline -->
         <section class="hero is-medium is-timeline">
             <div class="hero-body">
-                <div class="container">
+                <div class="container" data-aos="fade-in" data-aos-duration="1800">
                     <h1 class="title has-text-centered">Timeline</h1>
                     <br>
                     <div class="columns is-vcentered has-text-centered">
@@ -143,7 +144,7 @@
         </section>
         <!-- Photos -->
         <section class="hero is-medium is-photos">
-            <div class="container is-fluid">
+            <div class="container is-fluid" data-aos="fade-in" data-aos-duration="1800">
                 <h1 class="title has-text-centered has-text-pink">Photos</h1>
                 <br>
                 <div class="columns is-vcentered has-text-centered">
@@ -231,6 +232,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     <script src="js/index.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init();
+    </script>
 
 </body>
 

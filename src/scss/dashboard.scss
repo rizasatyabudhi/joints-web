@@ -1,8 +1,7 @@
 @import "node_modules/bulma/sass/utilities/mixins";
 html,
 body {
-    background-color: #F5F8FA;
-    //waktu open navbar mobile html body overflow hidden
+    background-color: #F5F8FA; //waktu open navbar mobile html body overflow hidden
 }
 
 .app-navbar-dashboard {
@@ -19,6 +18,30 @@ body {
                     max-height: 2.25rem;
                 }
             }
+            .navbar-burger {
+                span {
+                    background-color: #4a4a4a;
+                    transition: transform .3s ease;
+                    &.is-active {
+                        &:nth-child(1) {
+                            -webkit-transform: translateY(5px) rotate(45deg);
+                            transform: translateY(5px) rotate(45deg);
+                            transition: all .3s ease;
+                        }
+                        &:nth-child(2) {
+                            -webkit-transform: translateX(-15px);
+                            transform: translateX(-15px);
+                            opacity: 0;
+                            transition: transform 0.3s, ease opacity 0.7s;
+                        }
+                        &:nth-child(3) {
+                            -webkit-transform: translateY(-5px) rotate(-45deg);
+                            transform: translateY(-5px) rotate(-45deg);
+                            transition: all .3s ease;
+                        }
+                    }
+                }
+            }
         }
         @include mobile {
             .navbar-menu {
@@ -28,73 +51,127 @@ body {
                 z-index: 1;
             }
         }
-        .navbar-item {
-            i {
-                color: #4a4a4a;
-                &:hover {
-                    color: #65cb67;
-                }
-            }
-            .navbar-link {
-                color: #4a4a4a;
-                figure {
-                    img {
-                        border-radius: 50%;
-                        max-height: 2em;
-                    }
-                }
-                &:hover {
-                    color: #65cb67;
-                }
-                &:after {
-                    border: 1px solid #4a4a4a;
-                    border-top-width: 1px;
-                    border-right-width: 1px;
-                    border-top-style: solid;
-                    border-right-style: solid;
-                    border-top-color: rgb(74, 74, 74);
-                    border-right-color: rgb(74, 74, 74);
-                    border-right: 0;
-                    border-top: 0;
-                    content: " ";
-                    display: block;
-                    height: 0.5em;
-                    pointer-events: none;
-                    position: absolute;
-                    transform: rotate(-45deg);
-                    transform-origin: center;
-                    width: 0.5em;
-                    margin-top: -0.375em;
-                    right: 1.125em;
-                    top: 50%;
-                }
-                &:hover:after {
-                    border: 1px solid #65cb67;
-                    border-top-width: 1px;
-                    border-right-width: 1px;
-                    border-top-style: solid;
-                    border-right-style: solid;
-                    border-top-color: rgb(101, 203, 103);
-                    border-right-color: rgb(101, 203, 103);
-                    border-right: 0;
-                    border-top: 0;
-                    content: " ";
-                    display: block;
-                    height: 0.5em;
-                    pointer-events: none;
-                    position: absolute;
-                    transform: rotate(-45deg);
-                    transform-origin: center;
-                    width: 0.5em;
-                    margin-top: -0.375em;
-                    right: 1.125em;
-                    top: 50%;
-                }
-            }
-            .navbar-dropdown {
-                .navbar-item {
+        .navbar-menu {
+            a {
+                &.navbar-item {
+                    color: #4a4a4a !important;
                     &:hover {
                         color: #65cb67 !important;
+                    }
+                    &:active {
+                        color: #65cb67 !important;
+                    }
+                    i {
+                        color: #4a4a4a;
+                        &:hover {
+                            color: #65cb67;
+                        }
+                    }
+                    .navbar-dropdown {
+                        .navbar-item {
+                            &:hover {
+                                color: #65cb67 !important;
+                            }
+                        }
+                    }
+                }
+            }
+            .navbar-item {
+                .navbar-link {
+                    color: #4a4a4a;
+                    figure {
+                        img {
+                            border-radius: 50%;
+                            max-height: 2em;
+                        }
+                    }
+                    &:hover {
+                        color: #65cb67;
+                    }
+                    &:after {
+                        border: 1px solid #4a4a4a;
+                        border-top-width: 1px;
+                        border-right-width: 1px;
+                        border-top-style: solid;
+                        border-right-style: solid;
+                        border-top-color: rgb(74, 74, 74);
+                        border-right-color: rgb(74, 74, 74);
+                        border-right: 0;
+                        border-top: 0;
+                        content: " ";
+                        display: block;
+                        height: 0.5em;
+                        pointer-events: none;
+                        position: absolute;
+                        transform: rotate(-45deg);
+                        transform-origin: center;
+                        width: 0.5em;
+                        margin-top: -0.375em;
+                        right: 1.125em;
+                        top: 50%;
+                    }
+                    &:hover:after {
+                        border: 1px solid #65cb67;
+                        border-top-width: 1px;
+                        border-right-width: 1px;
+                        border-top-style: solid;
+                        border-right-style: solid;
+                        border-top-color: rgb(101, 203, 103);
+                        border-right-color: rgb(101, 203, 103);
+                        border-right: 0;
+                        border-top: 0;
+                        content: " ";
+                        display: block;
+                        height: 0.5em;
+                        pointer-events: none;
+                        position: absolute;
+                        transform: rotate(-45deg);
+                        transform-origin: center;
+                        width: 0.5em;
+                        margin-top: -0.375em;
+                        right: 1.125em;
+                        top: 50%;
+                    }
+                    @include mobile {
+                        &::after {
+                            display: none;
+                        }
+                        &:hover:after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            &.is-active {
+                .navbar-end {
+                    a {
+                        &.navbar-item {
+                            color: #4a4a4a;
+                            &:active {
+                                color: #f06562 !important;
+                            }
+                            &:hover {
+                                color: #f06562 !important;
+                            }
+                            &.has-text-success-reverse {
+                                color: #4a4a4a;
+                                &:hover {
+                                    color: #3abb69 !important;
+                                }
+                                &:active {
+                                    color: #3abb69 !important;
+                                }
+                            }
+                            &.has-text-twitter-reverse {
+                                color: #4a4a4a;
+                                &:hover {
+                                    color: #55acee !important;
+                                }
+                                &:active {
+                                    color: #55acee !important;
+                                }
+                            }
+                        }
                     }
                 }
             }

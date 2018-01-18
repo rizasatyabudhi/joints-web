@@ -57,6 +57,24 @@
             &:hover {
               color: $pink;
             }
+            &.has-text-success-reverse {
+              color: #4a4a4a;
+              &:hover {
+                color: $green;
+              }
+              &:active {
+                color: $green;
+              }
+            }
+            &.has-text-twitter-reverse {
+              color: #4a4a4a;
+              &:hover {
+                color: $twitter;
+              }
+              &:active {
+                color: $twitter;
+              }
+            }
           }
         }
       }
@@ -124,6 +142,15 @@
                 }
                 &:active {
                   color: $green;
+                }
+              }
+              &.has-text-twitter-reverse {
+                color: #4a4a4a;
+                &:hover {
+                  color: $twitter;
+                }
+                &:active {
+                  color: $twitter;
                 }
               }
             }
@@ -203,6 +230,14 @@
             padding: 0;
             img {
               object-fit: cover;
+              filter: gray;
+              -webkit-filter: grayscale(1);
+              transition: all 1s ease-in-out;
+              -webkit-transition: all 0.3s ease-in-out;
+              &:hover {
+                filter: none;
+                -webkit-filter: grayscale(0);
+              }
             }
           }
         }

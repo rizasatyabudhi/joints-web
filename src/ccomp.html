@@ -5,6 +5,7 @@
   <title>Joints</title>
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
@@ -62,7 +63,7 @@
       <div class="hero-body">
         <div class="container">
           <div class="columns is-vcentered is-reverse-mobile">
-            <div class="column has-text-left">
+            <div class="column has-text-left" data-aos="fade-right" data-aos-duration="1800">
               <h1 class="title has-text-white is-size-1">
                 JOINTS 2018 :
                 <br> C-Compiler
@@ -72,10 +73,10 @@
                 yang diselenggarakan oleh Program Studi Ilmu Komputer Universitas Gadjah Mada (UGM).
               </p>
               <br>
-              <a class="button is-linkedin is-rounded">Selengkapnya</a>
+              <a class="button is-linkedin is-rounded" id="selengkapnya">Selengkapnya</a>
             </div>
             <div class="column has-text-centered">
-              <img src="images/kompetisi/kompetisi.png" class="img-kompetisi" alt="">
+              <img src="images/kompetisi/kompetisi.png" class="img-kompetisi" alt="" data-aos="fade-up" data-aos-duration="1800">
             </div>
           </div>
         </div>
@@ -84,16 +85,16 @@
     <!-- Acara -->
     <section class="hero is-medium is-acara">
       <div class="hero-body">
-        <div class="container">
-          <h1 class="title has-text-centered has-text-black">LOMBA-LOMBA</h1>
+        <div class="container" data-aos="fade-down" data-aos-duration="2500">
+          <h1 class="title has-text-centered has-text-twitter" id="lomba">LOMBA-LOMBA</h1>
           <br>
           <div class="columns has-equal-heights has-text-centered">
             <div class="column  has-text-centered">
-              <a class="box" href="pcs.html">
+              <a class="box" href="c-cp.html">
                 <img class="image is-64x64" src="images/kompetisi/pcs.png" alt="">
                 <span class="separator"></span>
                 <br>
-                <h5 class="subtitle">Programming Competition Session</h5>
+                <h5 class="subtitle">Competitive Programming</h5>
               </a>
             </div>
             <div class="column ">
@@ -137,7 +138,7 @@
     <!-- Timeline -->
     <section class="hero is-medium is-timeline-ccomp">
       <div class="hero-body">
-        <div class="container">
+        <div class="container" data-aos="fade-in" data-aos-duration="1800">
           <h1 class="title has-text-centered">Timeline Kompetisi </h1>
           <br>
           <div class="columns is-vcentered has-text-centered">
@@ -149,8 +150,8 @@
     </section>
     <!-- Photos -->
     <section class="hero is-medium is-photos">
-      <div class="container is-fluid">
-        <h1 class="title has-text-centered has-text-black">Photos</h1>
+      <div class="container is-fluid" data-aos="fade-in" data-aos-duration="3000">
+        <h1 class="title has-text-centered has-text-twitter">Photos</h1>
         <br>
         <div class="columns is-vcentered has-text-centered">
           <div class="column is-3">
@@ -188,10 +189,10 @@
         <div class="container">
           <div class="columns is-vcentered">
             <div class="column has-text-left">
-              <h1 class="title has-text-black">Sponsor</h1>
+              <h1 class="title has-text-twitter">Sponsor</h1>
             </div>
             <div class="column has-text-right">
-              <h1 class="title has-text-black">Media Partner</h1>
+              <h1 class="title has-text-twitter">Media Partner</h1>
             </div>
           </div>
         </div>
@@ -280,7 +281,19 @@
         prev = wScroll;
 
       });
+
+      $("#selengkapnya").click(function () {
+        $('html, body').animate({
+          scrollTop: $("#lomba").offset().top
+        }, 1000);
+      });
     });
+  </script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+    })
   </script>
 </body>
 

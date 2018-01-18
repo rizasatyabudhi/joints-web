@@ -5,9 +5,8 @@
   <title>Joints</title>
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="stylesheet" href="css/animate.css"> -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -67,7 +66,7 @@
                 yang diselenggarakan oleh Program Studi Ilmu Komputer Universitas Gadjah Mada
               </p>
               <br>
-              <a class="button is-orange is-rounded">Selengkapnya</a>
+              <a class="button is-orange is-rounded" id="selengkapnya">Selengkapnya</a>
             </div>
             <div class="column has-text-centered">
               <img src="images/kompetisi/kompetisi.png" class="img-kompetisi" alt="" data-aos="fade-up" data-aos-duration="1800">
@@ -80,7 +79,7 @@
     <section class="hero is-medium is-acara">
       <div class="hero-body">
         <div class="container" data-aos="fade-down" data-aos-duration="2500">
-          <h1 class="title has-text-centered has-text-light-green">LOMBA-LOMBA</h1>
+          <h1 class="title has-text-centered has-text-light-green" id="lomba">LOMBA-LOMBA</h1>
           <br>
           <div class="columns has-equal-heights has-text-centered">
             <div class="column  has-text-centered">
@@ -243,6 +242,12 @@
     AOS.init({
       duration: 1200,
     })
+
+    $("#selengkapnya").click(function () {
+      $('html, body').animate({
+        scrollTop: $("#lomba").offset().top
+      }, 1000);
+    });
   </script>
 </body>
 

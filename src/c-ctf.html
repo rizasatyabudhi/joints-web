@@ -5,6 +5,7 @@
   <title>Joints</title>
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -56,7 +57,7 @@
       <div class="hero-body">
         <div class="container">
           <div class="columns is-vcentered is-reverse-mobile">
-            <div class="column has-text-centered">
+            <div class="column has-text-centered" data-aos="fade-up">
               <img src="images/kompetisi/ctf.png" alt="">
 
               <h1 class="has-text-white is-size-1">
@@ -66,7 +67,8 @@
                 Buktiin Kalau Kamu Jago Hacking!
               </p>
               <br>
-              <a class="button is-linkedin is-rounded">Daftar Yuk!</a>
+              <a class="button is-linkedin is-rounded" href="register.html">Daftar Yuk!</a>
+
             </div>
           </div>
         </div>
@@ -76,16 +78,16 @@
     <!-- Deskripsi -->
     <section class="hero is-medium is-deskripsi">
       <div class="hero-body">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
           <h1 class="title has-text-centered has-text-twitter">Deskripsi</h1>
           <div class="columns is-vcentered has-text-centered">
             <div class="column has-text-centered is-8 is-offset-2">
-              <p>Capture The Flag merupakan kompetisi network & information security yang
-                <strong>bisa diikuti oleh mahasiswa dan siswa SMA/SMK.</strong>
+              <p>Capture The Flag merupakan kompetisi network & information security
+
               </p>
               <p>Kompetisi ini memiliki permasalahan mengenai kemanaan jaringan dan informasi dan kamu dituntut untuk menyelesaikannya
                 yang mengangkat konsep Jeopardy. Hanya terdiri dari 1 kategori, CTF bisa diikuiti oleh tim yang terdiri dari
-                1-3 orang yang berasal dari Universitas atau Sekolah yang sama.</p>
+                1-3 orang</p>
               <br>
               <a class="button is-twitter is-rounded " href="https://drive.google.com/open?id=1VrvXp0TqQLWvENRfHjbFYKagCxvafk4h">Download Rulebook</a>
             </div>
@@ -97,7 +99,7 @@
     <!-- Hadiah -->
     <section class="hero is-medium is-hadiah">
       <div class="hero-body">
-        <div class="container">
+        <div class="container" data-aos="zoom-in">
           <h1 class="title has-text-centered has-text-twitter">Prize Pool</h1>
           <div class="columns has-equal-heights has-text-centered">
             <div class="column  has-text-centered">
@@ -106,8 +108,8 @@
                   <img src="images/kompetisi/medals/1.svg" alt="">
                 </div>
                 <br>
-                <h5 class="has-text-twitter">Winner's</h5>
-                <p class="subtitle">Rp 3.500.000</p>
+                <h5 class="has-text-twitter has-text-weight-bold">1st Place</h5>
+                <p class="subtitle">Rp 1.000.000</p>
 
               </div>
             </div>
@@ -117,8 +119,8 @@
                   <img src="images/kompetisi/medals/2.svg" alt="">
                 </div>
                 <br>
-                <h5 class="has-text-twitter">Runner Up</h5>
-                <p class="subtitle">Rp 2.500.000</p>
+                <h5 class="has-text-twitter has-text-weight-bold">2nd Place</h5>
+                <p class="subtitle">Rp 600.000</p>
 
               </div>
             </div>
@@ -128,22 +130,12 @@
                   <img src="images/kompetisi/medals/3.svg" alt="">
                 </div>
                 <br>
-                <h5 class="has-text-twitter">3rd Place</h5>
-                <p class="subtitle">Rp 1.500.000</p>
+                <h5 class="has-text-twitter has-text-weight-bold">3rd Place</h5>
+                <p class="subtitle">Rp 400.000</p>
 
               </div>
             </div>
-            <div class="column ">
-              <div class="box">
-                <div class="box-icon">
-                  <img src="images/kompetisi/medals/4.svg" alt="">
-                </div>
-                <br>
-                <h5 class="has-text-twitter">Favourite</h5>
-                <p class="subtitle">Rp 1.250.000</p>
 
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -152,7 +144,7 @@
     <!-- Timeline -->
     <section class="hero is-medium is-timeline">
       <div class="hero-body">
-        <div class="container">
+        <div class="container" data-aos="zoom-in">
           <h1 class="title has-text-centered has-text-twitter">Timeline</h1>
           <br>
           <div class="columns is-vcentered has-text-centered">
@@ -166,7 +158,7 @@
     <!-- Lomba lain -->
     <section class="hero is-medium is-lomba-lain">
       <div class="hero-body">
-        <div class="container">
+        <div class="container" data-aos="zoom-in">
           <h1 class="title has-text-centered has-text-twitter">Lomba Lain</h1>
           <br>
           <div class="columns">
@@ -251,10 +243,10 @@
                   <div class="media-content">
                     <div class="content">
                       <p class="subtitle has-text-success">
-                        <strong>Programming Competition Session</strong>
+                        <strong>Competitive Programming</strong>
                       </p>
                       <p>
-                        Programming Competition Session adalah Kompetisi pemrograman ini dikhususkan bagi pelajar pra kuliah dari SD hinggga SMA.
+                        Competitive Programming adalah kompetisi yang dikhususkan bagi mahasiswa UGM.
                       </p>
                       <a class="button is-twitter is-rounded" href="pcs.html">Selengkapnya</a>
                     </div>
@@ -325,6 +317,12 @@
   <!-- Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
   <script src="js/kompetisi.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script type="text/javascript">
+    AOS.init({
+      duration: 1200,
+    })
+  </script>
 </body>
 
 </html>

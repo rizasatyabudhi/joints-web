@@ -8408,6 +8408,7 @@ label.panel-block {
 .app-content-kategori section.is-lomba-lain {
   background-color: #fafafa; }
   .app-content-kategori section.is-lomba-lain .box {
+    height: 100%;
     box-shadow: 0 5px 4px 0 rgba(219, 219, 219, 0.5); }
 
 .app-content-ccomp section.is-intro-kompetisi {
@@ -8445,8 +8446,8 @@ label.panel-block {
     border-bottom: 2px solid #c12c74; }
 
 .app-content-ccomp section.is-timeline-ccomp {
-  background-color: #36d1dc;
-  background: linear-gradient(to bottom, #36d1dc, #fff);
+  background-color: #5b86e5;
+  background: linear-gradient(to bottom, #6dcaf2, #fff);
   background-size: auto auto;
   background-size: cover; }
 
@@ -8486,3 +8487,66 @@ label.panel-block {
   .app-footer-ccomp .container .footer-bottom {
     border-top: 1px solid #fff;
     padding-top: 1rem; }
+
+.app-content-kategori-ccomp section.is-intro {
+  background: #36d1dc;
+  background: url(../images/kompetisi/wave.png), -webkit-linear-gradient(300deg, #36d1dc, #5b86e5);
+  background: url(../images/kompetisi/wave.png), linear-gradient(300deg, #36d1dc, #5b86e5);
+  background-size: 100%, cover, cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+  .app-content-kategori-ccomp section.is-intro img {
+    width: 15%; }
+    @media screen and (max-width: 768px) {
+      .app-content-kategori-ccomp section.is-intro img {
+        width: 30%; } }
+
+.app-content-kategori-ccomp section.is-hadiah {
+  background-color: #fafafa; }
+  .app-content-kategori-ccomp section.is-hadiah .column .box {
+    margin-top: 80px;
+    box-shadow: 0 5px 4px 0 rgba(219, 219, 219, 0.5); }
+    .app-content-kategori-ccomp section.is-hadiah .column .box .box-icon {
+      margin: 0 auto;
+      height: 100px;
+      width: 100px;
+      border-radius: 100%;
+      background-color: white;
+      margin-top: -70px;
+      position: relative;
+      box-shadow: 0 5px 5px 0 rgba(219, 219, 219, 0.25);
+      border: 1px solid rgba(219, 219, 219, 0.25); }
+      .app-content-kategori-ccomp section.is-hadiah .column .box .box-icon img {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto; }
+
+.app-content-kategori-ccomp section.is-timeline {
+  background: #fff !important; }
+
+.app-content-kategori-ccomp section.is-lomba-lain {
+  background-color: #fafafa; }
+  .app-content-kategori-ccomp section.is-lomba-lain .box {
+    height: 100%;
+    box-shadow: 0 5px 4px 0 rgba(219, 219, 219, 0.5); }
+
+.app-footer.is-footer-kategori-ccomp {
+  background: #36d1dc;
+  background: -webkit-linear-gradient(300deg, #36d1dc, #5b86e5);
+  background: linear-gradient(300deg, #36d1dc, #5b86e5);
+  padding: 3rem 1rem; }
+
+.app-footer .container .content img {
+  width: 9%;
+  margin: 0 auto;
+  position: relative; }
+  @media screen and (max-width: 768px) {
+    .app-footer .container .content img {
+      width: 20%; } }
+
+.app-footer .container .content p a {
+  padding: 0 5px; }
+
+.app-footer .container .footer-bottom {
+  border-top: 1px solid #fff;
+  padding-top: 1rem; }

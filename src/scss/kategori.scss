@@ -1,52 +1,55 @@
 .app-content-kategori {
-    section {
-        &.is-intro {
-            background: #089d95;
-            background: url(../images/kompetisi/wave.png), -webkit-linear-gradient(300deg, #089d95, #65cb67);
-            background: url(../images/kompetisi/wave.png), linear-gradient(300deg, #089d95, #65cb67);
-            background-size: 100%, cover, cover;
-            background-repeat: no-repeat;
-            background-position: bottom;
-            img {
-                width: 15%;
-                @include mobile {
-                    width: 30%;
-                }
-            }
+  section {
+    &.is-intro {
+      background: #089d95;
+      background: url(../images/kompetisi/wave.png),
+        -webkit-linear-gradient(300deg, #089d95, #65cb67);
+      background: url(../images/kompetisi/wave.png),
+        linear-gradient(300deg, #089d95, #65cb67);
+      background-size: 100%, cover, cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      img {
+        width: 15%;
+        @include mobile {
+          width: 30%;
         }
-        &.is-hadiah {
-            background-color: #fafafa;
-            .column {
-                .box {
-                    margin-top: 80px;
-                    box-shadow: 0 5px 4px 0 rgba(219, 219, 219, 0.5);
-                    .box-icon {
-                        margin: 0 auto;
-                        height: 100px;
-                        width: 100px;
-                        border-radius: 100%;
-                        background-color: white;
-                        margin-top: -70px;
-                        position: relative;
-                        box-shadow: 0 5px 5px 0 rgba(219, 219, 219, 0.25);
-                        border: 1px solid rgba(219, 219, 219, 0.25);
-                        img {
-                            width: 100px;
-                            height: 100px;
-                            margin: 0 auto;
-                        }
-                    }
-                }
-            }
-        }
-        &.is-timeline {
-            background: #fff !important;
-        }
-        &.is-lomba-lain {
-            background-color: #fafafa;
-            .box {
-                box-shadow: 0 5px 4px 0 rgba(219, 219, 219, 0.5);
-            }            
-        }
+      }
     }
+    &.is-hadiah {
+      background-color: #fafafa;
+      .column {
+        .box {
+          margin-top: 80px;
+          box-shadow: 0 5px 4px 0 rgba(219, 219, 219, 0.5);
+          .box-icon {
+            margin: 0 auto;
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+            background-color: white;
+            margin-top: -70px;
+            position: relative;
+            box-shadow: 0 5px 5px 0 rgba(219, 219, 219, 0.25);
+            border: 1px solid rgba(219, 219, 219, 0.25);
+            img {
+              width: 100px;
+              height: 100px;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+    &.is-timeline {
+      background: #fff !important;
+    }
+    &.is-lomba-lain {
+      background-color: #fafafa;
+      .box {
+        height: 100%;
+        box-shadow: 0 5px 4px 0 rgba(219, 219, 219, 0.5);
+      }
+    }
+  }
 }

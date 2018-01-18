@@ -8189,6 +8189,18 @@ label.panel-block {
         color: #f06562; }
       .app-header .navbar .navbar-menu.is-active a.navbar-item:hover {
         color: #f06562; }
+      .app-header .navbar .navbar-menu.is-active a.navbar-item.has-text-success-reverse {
+        color: #4a4a4a; }
+        .app-header .navbar .navbar-menu.is-active a.navbar-item.has-text-success-reverse:hover {
+          color: #3abb69; }
+        .app-header .navbar .navbar-menu.is-active a.navbar-item.has-text-success-reverse:active {
+          color: #3abb69; }
+      .app-header .navbar .navbar-menu.is-active a.navbar-item.has-text-twitter-reverse {
+        color: #4a4a4a; }
+        .app-header .navbar .navbar-menu.is-active a.navbar-item.has-text-twitter-reverse:hover {
+          color: #55acee; }
+        .app-header .navbar .navbar-menu.is-active a.navbar-item.has-text-twitter-reverse:active {
+          color: #55acee; }
     .app-header .navbar.is-fixed-top {
       background-color: white;
       transition: all .2s linear;
@@ -8227,6 +8239,12 @@ label.panel-block {
             color: #3abb69; }
           .app-header .navbar.is-fixed-top .navbar-menu.is-active a.navbar-item.has-text-success-reverse:active {
             color: #3abb69; }
+        .app-header .navbar.is-fixed-top .navbar-menu.is-active a.navbar-item.has-text-twitter-reverse {
+          color: #4a4a4a; }
+          .app-header .navbar.is-fixed-top .navbar-menu.is-active a.navbar-item.has-text-twitter-reverse:hover {
+            color: #55acee; }
+          .app-header .navbar.is-fixed-top .navbar-menu.is-active a.navbar-item.has-text-twitter-reverse:active {
+            color: #55acee; }
 
 .app-content section.is-intro {
   background-color: #f06562;
@@ -8271,7 +8289,14 @@ label.panel-block {
     .app-content section.is-photos .container .columns .column {
       padding: 0; }
       .app-content section.is-photos .container .columns .column img {
-        object-fit: cover; }
+        object-fit: cover;
+        filter: gray;
+        -webkit-filter: grayscale(1);
+        transition: all 1s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out; }
+        .app-content section.is-photos .container .columns .column img:hover {
+          filter: none;
+          -webkit-filter: grayscale(0); }
 
 .app-footer {
   background-color: #f06562;

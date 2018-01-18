@@ -3,6 +3,7 @@ $(document).ready(function () {
     $(".navbar-burger").click(function () {
         $("#navbarMenuHeroC").toggleClass("is-active");
         $(".navbar-burger > span").toggleClass("is-active");
+        $(".navbar-item").addClass("has-text-twitter-reverse");                
         $("#loginButton").removeClass("is-inverted");
     });
 

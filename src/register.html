@@ -9,46 +9,46 @@
   <link rel="stylesheet" type="text/css" href="./css/style.css">
 
 </head>
-<header class="app-header">
-  <nav class="navbar is-transparent">
-    <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item">
-          <img src="images/index/logo.png" alt="Logo">
-        </a>
-        <span class="navbar-burger burger" data-target="navbarMenuHeroC">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </div>
-      <div id="navbarMenuHeroC" class="navbar-menu">
-        <div class="navbar-end">
-          <a class="navbar-item has-text-white">
-            IT Day
-          </a>
-          <a class="navbar-item has-text-white">
-            Tech Talk
-          </a>
-          <a class="navbar-item has-text-white">
-            Kompetisi
-          </a>
-          <a class="navbar-item has-text-white">
-            Contact
-          </a>
-          <span class="navbar-item">
-            <a class="button is-success is-inverted is-outlined">
-              Log In
-            </a>
-          </span>
-        </div>
-      </div>
-    </div>
-  </nav>
-</header>
 
 <body>
-
+  <!-- Header -->
+  <header class="app-header">
+    <nav class="navbar is-transparent">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <img id="logoJoints" src="images/index/logo.png" alt="Logo">
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroC" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item">
+              IT Day
+            </a>
+            <a class="navbar-item">
+              Tech Talk
+            </a>
+            <a class="navbar-item" href="kompetisi.html">
+              Kompetisi
+            </a>
+            <a class="navbar-item">
+              Contact
+            </a>
+            <span class="navbar-item">
+              <a id="loginButton" class="button is-inverted is-outlined">
+                Log In
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
   <section class="hero is-success is-fullheight" style="background: linear-gradient(300deg, #089d95, #65cb67);">
     <div class="hero-body">
       <div class="container has-text-centered">
@@ -93,7 +93,8 @@
       </div>
     </div>
   </section>
-  <script async type="text/javascript" src="../js/bulma.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="js/kompetisi.js"></script>
 </body>
 
 </html>

@@ -3,6 +3,7 @@ $(document).ready(function () {
     $(".navbar-burger").click(function () {
         $("#navbarMenuHeroC").toggleClass("is-active");
         $(".navbar-burger > span").toggleClass("is-active");
+        $("#loginButton").removeClass("is-inverted");
     });
 
     // mengganti login button menjadi warna pink

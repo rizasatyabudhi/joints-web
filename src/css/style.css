@@ -8424,8 +8424,8 @@ label.panel-block {
   background-size: 100%, cover, cover;
   background-repeat: no-repeat;
   background-position: bottom; }
-  .app-content-ccomp section.is-intro-kompetisi img {
-    width: 15%; }
+  .app-content-ccomp section.is-intro-kompetisi .img-kompetisi {
+    width: 400px; }
 
 .app-content-ccomp section.is-acara .columns {
   padding: 0 60px; }

@@ -8589,6 +8589,9 @@ label.panel-block {
 .is-template-email {
   background-color: #f06562;
   background: linear-gradient(135deg, #f06562, #e5487c); }
+  .is-template-email.change-password {
+    background-color: #089d95;
+    background: linear-gradient(300deg, #089d95, #65cb67); }
   .is-template-email .header img {
     width: 12%;
     margin: 0 auto;

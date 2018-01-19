@@ -96,5 +96,12 @@ $label-weight: 300;
   transition: all .2s linear;
 }
 
+// Hide coming soon on Full HD Monitor
+@media screen and (min-width: 1408px) {
+  #comingsoon {
+      visibility: hidden;
+  }
+}
+
 // 6. Import the rest of Bulma
 @import "node_modules/bulma/bulma";

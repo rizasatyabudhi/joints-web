@@ -68,7 +68,7 @@
                                 untuk lebih bijak serta cerdas dalam memanfaatkan teknologi informasi yang tersedia.
                             </p>
                             <br>
-                            <a class="button is-purple is-rounded">Selengkapnya</a>
+                            <a class="button is-purple is-rounded" id="selengkapnya">Selengkapnya</a>
                         </div>
                         <div class="column">
                             <img src="images/index/img.png" alt="" data-aos="fade-up" data-aos-duration="1800">
@@ -82,7 +82,7 @@
         <section class="hero is-medium is-acara">
             <div class="hero-body">
                 <div class="container" data-aos="fade-down" data-aos-duration="1800">
-                    <h1 class="title has-text-centered has-text-pink">Rangkaian Acara</h1>
+                    <h1 class="title has-text-centered has-text-pink" id="acara">Rangkaian Acara</h1>
                     <br>
                     <div class="columns has-equal-heights has-text-centered">
                         <div class="column is-4 has-text-centered">
@@ -337,6 +337,12 @@
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script type="text/javascript">
         AOS.init();
+
+        $("#selengkapnya").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#acara").offset().top
+            }, 1000);
+        });
     </script>
 
 </body>

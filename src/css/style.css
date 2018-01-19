@@ -8163,11 +8163,11 @@ label.panel-block {
       max-height: 2rem; }
     .app-header .navbar .navbar-brand .navbar-burger span {
       background-color: white;
-      transition: transform .3s ease; }
+      transition: transform 0.3s ease; }
       .app-header .navbar .navbar-brand .navbar-burger span.is-active:nth-child(1) {
         -webkit-transform: translateY(5px) rotate(45deg);
         transform: translateY(5px) rotate(45deg);
-        transition: all .3s ease; }
+        transition: all 0.3s ease; }
       .app-header .navbar .navbar-brand .navbar-burger span.is-active:nth-child(2) {
         -webkit-transform: translateX(-15px);
         transform: translateX(-15px);
@@ -8176,7 +8176,7 @@ label.panel-block {
       .app-header .navbar .navbar-brand .navbar-burger span.is-active:nth-child(3) {
         -webkit-transform: translateY(-5px) rotate(-45deg);
         transform: translateY(-5px) rotate(-45deg);
-        transition: all .3s ease; }
+        transition: all 0.3s ease; }
     .app-header .navbar .navbar-menu a.navbar-item {
       color: white; }
       .app-header .navbar .navbar-menu a.navbar-item:hover {
@@ -8203,7 +8203,7 @@ label.panel-block {
           color: #55acee; }
     .app-header .navbar.is-fixed-top {
       background-color: white;
-      transition: all .2s linear;
+      transition: all 0.2s linear;
       box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1); }
       .app-header .navbar.is-fixed-top .navbar-brand .navbar-item img {
         max-height: 2rem; }
@@ -8273,7 +8273,7 @@ label.panel-block {
 
 .app-content section.is-timeline {
   background-color: #fdeeee;
-  background: url(../images/index/skew-top.png), linear-gradient(to bottom, #fdeeee, #fff);
+  background: url(../images/index/skew-top.png), linear-gradient(to bottom, rgba(253, 238, 238, 0.5) 1%, #fff);
   background-size: 100%, cover, cover;
   background-repeat: no-repeat;
   background-position: top; }
@@ -8359,7 +8359,7 @@ label.panel-block {
 
 .app-content-kompetisi section.is-timeline-kompetisi {
   background-color: #cdefde;
-  background: linear-gradient(to bottom, #cdefde, #fff);
+  background: linear-gradient(to bottom, rgba(204, 239, 221, 0.5) 1%, #fff);
   background-size: auto auto;
   background-size: cover; }
 
@@ -8481,8 +8481,7 @@ label.panel-block {
     box-shadow: 0 0 11px rgba(33, 33, 33, 0.2); }
 
 .app-content-ccomp section.is-timeline-ccomp {
-  background-color: #5b86e5;
-  background: linear-gradient(to bottom, #6dcaf2, #fff);
+  background: linear-gradient(to bottom, rgba(209, 236, 247, 0.5) 1%, #fff);
   background-size: auto auto;
   background-size: cover; }
 

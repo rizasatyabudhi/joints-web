@@ -13,12 +13,12 @@
       .navbar-burger {
         span {
           background-color: white;
-          transition: transform .3s ease;
+          transition: transform 0.3s ease;
           &.is-active {
             &:nth-child(1) {
               -webkit-transform: translateY(5px) rotate(45deg);
               transform: translateY(5px) rotate(45deg);
-              transition: all .3s ease;
+              transition: all 0.3s ease;
             }
             &:nth-child(2) {
               -webkit-transform: translateX(-15px);
@@ -29,7 +29,7 @@
             &:nth-child(3) {
               -webkit-transform: translateY(-5px) rotate(-45deg);
               transform: translateY(-5px) rotate(-45deg);
-              transition: all .3s ease;
+              transition: all 0.3s ease;
             }
           }
         }
@@ -81,7 +81,7 @@
     }
     &.is-fixed-top {
       background-color: white;
-      transition: all .2s linear;
+      transition: all 0.2s linear;
       box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
       .navbar-brand {
         .navbar-item {
@@ -166,7 +166,8 @@
     // intro
     &.is-intro {
       background-color: $pink;
-      background: url(../images/index/skew-bottom.png), linear-gradient(135deg, $pink, #e5487c);
+      background: url(../images/index/skew-bottom.png),
+        linear-gradient(135deg, $pink, #e5487c);
       background-size: 100%, cover, cover;
       background-repeat: no-repeat;
       background-position: bottom;
@@ -211,7 +212,8 @@
     }
     &.is-timeline {
       background-color: #fdeeee;
-      background: url(../images/index/skew-top.png), linear-gradient(to bottom, #fdeeee, #fff);
+      background: url(../images/index/skew-top.png),
+        linear-gradient(to bottom, rgba(253, 238, 238, 0.5) 1%, #fff);
       background-size: 100%, cover, cover;
       background-repeat: no-repeat;
       background-position: top;

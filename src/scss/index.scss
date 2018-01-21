@@ -252,11 +252,15 @@
   background-color: $pink;
   background: linear-gradient(135deg, $pink, #e5487c);
   padding: 3rem 1rem;
-  &.is-footer-kategori {
+  &.is-footer-kompetisi {
     background: #089d95;
     background: -webkit-linear-gradient(300deg, #089d95, #65cb67);
     background: linear-gradient(300deg, #089d95, #65cb67);
-    padding: 3rem 1rem;
+  }
+  &.is-footer-ccomp {
+    background-color: #36d1dc;
+    background: -webkit-linear-gradient(300deg, #36d1dc, #5b86e5);    
+    background: linear-gradient(300deg, #36d1dc, #5b86e5);
   }
   .container {
     .content {

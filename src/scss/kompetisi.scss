@@ -116,30 +116,3 @@
     }
   }
 }
-
-.app-footer-kompetisi {
-  background-color: #089d95;
-  background: linear-gradient(300deg, #089d95, #65cb67);
-  padding: 3rem 1rem;
-  .container {
-    .content {
-      img {
-        width: 9%;
-        margin: 0 auto;
-        position: relative;
-        @include mobile {
-          width: 20%;
-        }
-      }
-      p {
-        a {
-          padding: 0 5px;
-        }
-      }
-    }
-    .footer-bottom {
-      border-top: 1px solid $white;
-      padding-top: 1rem;
-    }
-  }
-}

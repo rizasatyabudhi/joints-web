@@ -10,6 +10,20 @@ $(document).ready(function () {
     // mengganti login button menjadi warna hijau
     $("#loginButton").addClass("is-success");
 
+   // add id footer
+   $("footer").attr("id", "footer");
+   // fungsi scroll
+   $("#contact").click(function () {
+       $('html, body').animate({
+           scrollTop: $("#footer").offset().top
+       }, 1000);
+   });
+
+   
+    // change background footer
+    $("footer").addClass("is-footer-kompetisi");
+    
+
     var prev = 53;
     // console.log(prev + " prev awal");
 

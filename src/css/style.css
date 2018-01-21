@@ -8306,11 +8306,14 @@ label.panel-block {
   background-color: #f06562;
   background: linear-gradient(135deg, #f06562, #e5487c);
   padding: 3rem 1rem; }
-  .app-footer.is-footer-kategori {
+  .app-footer.is-footer-kompetisi {
     background: #089d95;
     background: -webkit-linear-gradient(300deg, #089d95, #65cb67);
-    background: linear-gradient(300deg, #089d95, #65cb67);
-    padding: 3rem 1rem; }
+    background: linear-gradient(300deg, #089d95, #65cb67); }
+  .app-footer.is-footer-ccomp {
+    background-color: #36d1dc;
+    background: -webkit-linear-gradient(300deg, #36d1dc, #5b86e5);
+    background: linear-gradient(300deg, #36d1dc, #5b86e5); }
   .app-footer .container .content img {
     width: 9%;
     margin: 0 auto;
@@ -8386,23 +8389,6 @@ label.panel-block {
         .app-content-kompetisi section.is-photos .container .columns .column img:hover {
           filter: none;
           -webkit-filter: grayscale(0); }
-
-.app-footer-kompetisi {
-  background-color: #089d95;
-  background: linear-gradient(300deg, #089d95, #65cb67);
-  padding: 3rem 1rem; }
-  .app-footer-kompetisi .container .content img {
-    width: 9%;
-    margin: 0 auto;
-    position: relative; }
-    @media screen and (max-width: 768px) {
-      .app-footer-kompetisi .container .content img {
-        width: 20%; } }
-  .app-footer-kompetisi .container .content p a {
-    padding: 0 5px; }
-  .app-footer-kompetisi .container .footer-bottom {
-    border-top: 1px solid #fff;
-    padding-top: 1rem; }
 
 .app-content-kategori section.is-intro {
   background: #089d95;
@@ -8510,8 +8496,6 @@ label.panel-block {
           -webkit-filter: grayscale(0); }
 
 .app-footer-ccomp {
-  background-color: #36d1dc;
-  background: linear-gradient(300deg, #36d1dc, #5b86e5);
   padding: 3rem 1rem; }
   .app-footer-ccomp .container .content img {
     width: 9%;
@@ -8567,27 +8551,6 @@ label.panel-block {
   .app-content-kategori-ccomp section.is-lomba-lain .box {
     height: 100%;
     box-shadow: 0 5px 4px 0 rgba(219, 219, 219, 0.5); }
-
-.app-footer.is-footer-kategori-ccomp {
-  background: #36d1dc;
-  background: -webkit-linear-gradient(300deg, #36d1dc, #5b86e5);
-  background: linear-gradient(300deg, #36d1dc, #5b86e5);
-  padding: 3rem 1rem; }
-
-.app-footer .container .content img {
-  width: 9%;
-  margin: 0 auto;
-  position: relative; }
-  @media screen and (max-width: 768px) {
-    .app-footer .container .content img {
-      width: 20%; } }
-
-.app-footer .container .content p a {
-  padding: 0 5px; }
-
-.app-footer .container .footer-bottom {
-  border-top: 1px solid #fff;
-  padding-top: 1rem; }
 
 .is-template-email {
   background-color: #f06562;

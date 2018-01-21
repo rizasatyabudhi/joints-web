@@ -8,6 +8,15 @@ $(document).ready(function () {
 
     // mengganti login button menjadi warna pink
     $("#loginButton").addClass("is-pink");
+    
+    // add id footer
+    $("footer").attr("id", "footer");
+    // fungsi scroll
+    $("#contact").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#footer").offset().top
+        }, 1000);
+    });
 
     var prev = 53;
     // console.log(prev + " prev awal");

@@ -95,6 +95,77 @@ Main Components
   -moz-transition: -moz-transform 0.3s;
   transition: transform 0.3s;
 }
+
+.app-content .cd-horizontal-timeline .filling-line {
+  /* this is used to create the green line filling the timeline */
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f06562;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -ms-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.app-content-ccomp .cd-horizontal-timeline .filling-line {
+  /* this is used to create the green line filling the timeline */
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #55acee;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -ms-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+.app-content-kategori-ccomp .cd-horizontal-timeline .filling-line {
+  /* this is used to create the green line filling the timeline */
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #55acee;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -ms-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
 .cd-horizontal-timeline .events a {
   position: absolute;
   bottom: 0;
@@ -135,6 +206,18 @@ Main Components
   background-color: #3abb69;
   border-color: #3abb69;
 }
+.app-content .no-touch .cd-horizontal-timeline .events a:hover::after {
+  background-color: #f06562;
+  border-color: #f06562;
+}
+.app-content-ccomp .no-touch .cd-horizontal-timeline .events a:hover::after {
+  background-color: #55acee;
+  border-color: #55acee;
+}
+.app-content-kategori-ccomp .no-touch .cd-horizontal-timeline .events a:hover::after {
+  background-color: #55acee;
+  border-color: #55acee;
+}
 .cd-horizontal-timeline .events a.selected {
   pointer-events: none;
 }
@@ -142,8 +225,29 @@ Main Components
   background-color: #3abb69;
   border-color: #3abb69;
 }
+.app-content .cd-horizontal-timeline .events a.selected::after {
+  background-color: #f06562;
+  border-color: #f06562;
+}
+.app-content-ccomp .cd-horizontal-timeline .events a.selected::after {
+  background-color: #55acee;
+  border-color: #55acee;
+}
+.app-content-kategori-ccomp .cd-horizontal-timeline .events a.selected::after {
+  background-color: #55acee;
+  border-color: #55acee;
+}
 .cd-horizontal-timeline .events a.older-event::after {
   border-color: #3abb69;
+}
+.app-content .cd-horizontal-timeline .events a.older-event::after {
+  border-color: #f06562;
+}
+.app-content-ccomp .cd-horizontal-timeline .events a.older-event::after {
+  border-color: #55acee;
+}
+.app-content-kategori-ccomp .cd-horizontal-timeline .events a.older-event::after {
+  border-color: #55acee;
 }
 @media only screen and (min-width: 1100px) {
   /*
@@ -198,6 +302,59 @@ Main Components
   transform: translateX(-50%) translateY(-50%);
   background: url(../images/cd-arrow.svg) no-repeat 0 0;
 }
+.app-content .cd-timeline-navigation a::after {
+  /* arrow icon */
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../images/cd-arrow-pink.svg) no-repeat 0 0;
+}
+.app-content-ccomp .cd-timeline-navigation a::after {
+  /* arrow icon */
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../images/cd-arrow-blue.svg) no-repeat 0 0;
+}
+
+.app-content-kategori-ccomp .cd-timeline-navigation a::after {
+  /* arrow icon */
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../images/cd-arrow-blue.svg) no-repeat 0 0;
+}
+
 .cd-timeline-navigation a.prev {
   left: 0;
   -webkit-transform: translateY(-50%) rotate(180deg);
@@ -211,6 +368,15 @@ Main Components
 }
 .no-touch .cd-timeline-navigation a:hover {
   border-color: #3abb69;
+}
+.app-content .no-touch .cd-timeline-navigation a:hover {
+  border-color: #f06562;
+}
+.app-content-ccomp .no-touch .cd-timeline-navigation a:hover {
+  border-color: #55acee;
+}
+.app-content-kategori-ccomp .no-touch .cd-timeline-navigation a:hover {
+  border-color: #55acee;
 }
 .cd-timeline-navigation a.inactive {
   cursor: not-allowed;

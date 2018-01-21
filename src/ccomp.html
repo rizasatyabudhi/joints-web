@@ -6,7 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
-  <link rel="stylesheet" href="css/c-timeline.css">
+  <link rel="stylesheet" href="css/timeline.css">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -322,11 +322,6 @@
     AOS.init({
       duration: 1200,
     })
-    function scrollFooter() {
-      $('html, body').animate({
-        scrollTop: $("#footer").offset().top
-      }, 1000);
-    }
     $("#selengkapnya").click(function () {
       $('html, body').animate({
         scrollTop: $("#lomba").offset().top

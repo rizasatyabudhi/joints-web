@@ -25,14 +25,14 @@ $(document).ready(function () {
             // login button
             $("#loginButton").removeClass("is-inverted");
             // logo joints
-            $("#logoJoints").attr("src", "images/logo-pink.png");
+            $("#logoJoints").attr("src", "http://joints.id/images/logo-pink.png");
         } else {
             // navbar
             $(".navbar").removeClass("is-fixed-top");
             // login button
             $("#loginButton").addClass("is-inverted");
             // logo joints
-            $("#logoJoints").attr("src", "images/index/logo.png");
+            $("#logoJoints").attr("src", "http://joints.id/images/index/logo.png");
         }
 
         // conditional navbar muncul saat di scroll keatas

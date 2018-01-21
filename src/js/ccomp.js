@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     // mengganti login button menjadi warna hijau
     $("#loginButton").addClass("is-twitter");
-    $("#logoJoints").attr("src", "images/ccomp/logoccomp-white.png");
+    $("#logoJoints").attr("src", "http://joints.id/images/ccomp/logoccomp-white.png");
 
     var prev = 53;
     // console.log(prev + " prev awal");
@@ -29,7 +29,7 @@ $(document).ready(function () {
             // login button
             $("#loginButton").removeClass("is-inverted");
             // logo joints
-            $("#logoJoints").attr("src", "images/ccomp/logoccomp.png");
+            $("#logoJoints").attr("src", "http://joints.id/images/ccomp/logoccomp.png");
         } else {
             // navbar
             $(".navbar").removeClass("is-fixed-top");

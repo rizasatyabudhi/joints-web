@@ -1,7 +1,8 @@
 @import "node_modules/bulma/sass/utilities/mixins";
+@import "node_modules/bulma/sass/utilities/initial-variables";
 html,
 body {
-    background-color: #F5F8FA; //waktu open navbar mobile html body overflow hidden
+    background-color: #F5F8FA;
 }
 
 .app-navbar-dashboard {
@@ -13,11 +14,6 @@ body {
         background-color: #fff;
         box-shadow: 0 10px 30px 0 rgba(229, 238, 242, .5);
         .navbar-brand {
-            .navbar-item {
-                img {
-                    max-height: 2.25rem;
-                }
-            }
             .navbar-burger {
                 span {
                     background-color: #4a4a4a;
@@ -39,6 +35,39 @@ body {
                             transform: translateY(-5px) rotate(-45deg);
                             transition: all .3s ease;
                         }
+                    }
+                }
+            }
+            a {
+                &#hamburgerMenu {
+                    color: #4a4a4a;
+                    &:after {
+                        content: '';
+                        background: #666666;
+                        display: block;
+                        position: absolute;
+                        border-radius: 100%;
+                        box-sizing: border-box;
+                        margin-left: auto;
+                        margin-top: 8px;
+                        margin-right: auto;
+                        margin-bottom: 8px;
+                        width: 36px;
+                        height: 36px;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        opacity: 0;
+                        transition: all .5s;
+                    }
+                    &:active:after {
+                        width: 0px;
+                        height: 0px;
+                        margin-top: 26px;
+                        margin-bottom: 26px;
+                        opacity: 1;
+                        transition: all 0s;
                     }
                 }
             }
@@ -188,6 +217,7 @@ body {
             box-shadow: 0 10px 30px 0 rgba(229, 238, 242, .5);
             position: absolute;
             left: 0;
+            overflow-y: auto;
             .menu-list {
                 li {
                     a {
@@ -200,7 +230,24 @@ body {
                             color: #65cb67;
                         }
                         &:hover {
+                            border-left: 6px solid #65cb67;
                             color: #65cb67;
+                        }
+                    }
+                    ul {
+                        margin-left: 18px;
+                        li {
+                            a {
+                                border-left: none;
+                                &.is-active {
+                                    border-left: none;
+                                    color: #65cb67;
+                                }
+                                &:hover {
+                                    border-left: none;
+                                    color: #65cb67;
+                                }
+                            }
                         }
                     }
                 }
@@ -229,6 +276,25 @@ body {
             .box {
                 box-shadow: 0 10px 30px 0 rgba(229, 238, 242, .5);
                 border-radius: 2px;
+                &.notification {
+                    box-shadow: 0 10px 30px 0 rgba(229,238,242,.5);
+                    border-radius: 2px;
+                }
+            }
+            .table {
+                width: 100%;
+                .is-selected {
+                    background-color: #65cb67;
+                }
+            }
+            .pagination {
+                a {
+                    color: #65cb67;
+                    &.is-current {
+                        background: #65cb67;
+                        color: white;
+                    }
+                }
             }
         }
     }

@@ -10,8 +10,6 @@ body {
   .app-navbar-dashboard .navbar {
     background-color: #fff;
     box-shadow: 0 10px 30px 0 rgba(229, 238, 242, 0.5); }
-    .app-navbar-dashboard .navbar .navbar-brand .navbar-item img {
-      max-height: 2.25rem; }
     .app-navbar-dashboard .navbar .navbar-brand .navbar-burger span {
       background-color: #4a4a4a;
       transition: transform .3s ease; }
@@ -28,6 +26,34 @@ body {
         -webkit-transform: translateY(-5px) rotate(-45deg);
         transform: translateY(-5px) rotate(-45deg);
         transition: all .3s ease; }
+    .app-navbar-dashboard .navbar .navbar-brand a#hamburgerMenu {
+      color: #4a4a4a; }
+      .app-navbar-dashboard .navbar .navbar-brand a#hamburgerMenu:after {
+        content: '';
+        background: #666666;
+        display: block;
+        position: absolute;
+        border-radius: 100%;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-top: 8px;
+        margin-right: auto;
+        margin-bottom: 8px;
+        width: 36px;
+        height: 36px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: all .5s; }
+      .app-navbar-dashboard .navbar .navbar-brand a#hamburgerMenu:active:after {
+        width: 0px;
+        height: 0px;
+        margin-top: 26px;
+        margin-bottom: 26px;
+        opacity: 1;
+        transition: all 0s; }
     @media screen and (max-width: 768px) {
       .app-navbar-dashboard .navbar .navbar-menu {
         -webkit-overflow-scrolling: touch;
@@ -126,7 +152,8 @@ body {
     background-color: #fff;
     box-shadow: 0 10px 30px 0 rgba(229, 238, 242, 0.5);
     position: absolute;
-    left: 0; }
+    left: 0;
+    overflow-y: auto; }
     .app-main-dashboard .column .menu .menu-list li a {
       padding-left: 10px;
       border-left: 6px solid #fff;
@@ -136,7 +163,18 @@ body {
         border-left: 6px solid #65cb67;
         color: #65cb67; }
       .app-main-dashboard .column .menu .menu-list li a:hover {
+        border-left: 6px solid #65cb67;
         color: #65cb67; }
+    .app-main-dashboard .column .menu .menu-list li ul {
+      margin-left: 18px; }
+      .app-main-dashboard .column .menu .menu-list li ul li a {
+        border-left: none; }
+        .app-main-dashboard .column .menu .menu-list li ul li a.is-active {
+          border-left: none;
+          color: #65cb67; }
+        .app-main-dashboard .column .menu .menu-list li ul li a:hover {
+          border-left: none;
+          color: #65cb67; }
     .app-main-dashboard .column .menu .menu-footer {
       padding-left: 24px; }
       .app-main-dashboard .column .menu .menu-footer p a {
@@ -154,3 +192,15 @@ body {
     .app-main-dashboard .column .main .box {
       box-shadow: 0 10px 30px 0 rgba(229, 238, 242, 0.5);
       border-radius: 2px; }
+      .app-main-dashboard .column .main .box.notification {
+        box-shadow: 0 10px 30px 0 rgba(229, 238, 242, 0.5);
+        border-radius: 2px; }
+    .app-main-dashboard .column .main .table {
+      width: 100%; }
+      .app-main-dashboard .column .main .table .is-selected {
+        background-color: #65cb67; }
+    .app-main-dashboard .column .main .pagination a {
+      color: #65cb67; }
+      .app-main-dashboard .column .main .pagination a.is-current {
+        background: #65cb67;
+        color: white; }

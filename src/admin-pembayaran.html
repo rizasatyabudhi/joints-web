@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard | Pembayaran</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- START NAV -->
+    <header class="app-navbar-dashboard">
+        <nav class="navbar is-transparent">
+            <div class="navbar-brand">
+                <a id="hamburgerMenu" class="fa fa-bars navbar-item is-narrow-mobile is-fullheight is-hidden-mobile">
+                </a>
+                <a class="navbar-item">
+                    <img src="images/logo-hijau.png" alt="Logo">
+                </a>
+                <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navbarMenuHeroC" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item is-hidden-tablet">
+                        Beranda
+                    </a>
+                    <a class="navbar-item is-hidden-tablet">
+                        Pembayaran
+                    </a>
+                    <a class="navbar-item is-hidden-tablet">
+                        Data Tim
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable is-hidden-tablet">
+                        <a class="navbar-link">
+                            Pengumuman
+                        </a>
+                        <div class="navbar-dropdown is-right">
+                            <a class="navbar-item" href="/documentation/overview/start/">
+                                Daftar Pengumuman
+                            </a>
+                            <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                                Tambah Pengumuman
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable is-hidden-tablet">
+                        <a class="navbar-link">
+                            FAQ
+                        </a>
+                        <div class="navbar-dropdown is-right">
+                            <a class="navbar-item" href="/documentation/overview/start/">
+                                Daftar FAQ
+                            </a>
+                            <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                                Tambah FAQ
+                            </a>
+                        </div>
+                    </div>
+                    <a class="navbar-item is-hidden-tablet">
+                        Chat
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-item" href="/documentation/overview/start/">
+                            <span class="badge is-badge-danger" data-badge="1">
+                                <i class="fa fa-bell-o fa-fw"></i>
+                            </span>
+                        </a>
+                        <div class="navbar-dropdown is-right">
+                            <a class="navbar-item" href="/2017/11/14/bulma-is-on-patreon/">
+                                <div class="navbar-content">
+                                    <p>
+                                        <small class="has-text-link">14 Nov 2017</small>
+                                    </p>
+                                    <p>Bulma is on Patreon!</p>
+                                </div>
+                            </a>
+
+                            <a class="navbar-item" href="/2017/11/01/fixed-navbar/">
+                                <div class="navbar-content">
+                                    <p>
+                                        <small class="has-text-link">01 Nov 2017</small>
+                                    </p>
+                                    <p>New feature: fixed navbar</p>
+                                </div>
+                            </a>
+
+                            <a class="navbar-item" href="/2017/10/22/list-of-buttons/">
+                                <div class="navbar-content">
+                                    <p>
+                                        <small class="has-text-link">22 Oct 2017</small>
+                                    </p>
+                                    <p>New feature: list of buttons</p>
+                                </div>
+                            </a>
+
+                            <a class="navbar-item" href="https://bulma.io/blog/">
+                                More posts
+                            </a>
+                            <hr class="navbar-divider">
+                            <div class="navbar-item">
+                                <div class="navbar-content">
+                                    <div class="level is-mobile">
+                                        <div class="level-left">
+                                            <div class="level-item">
+                                                <strong>Stay up to date!</strong>
+                                            </div>
+                                        </div>
+                                        <div class="level-right">
+                                            <div class="level-item">
+                                                <a class="button bd-is-rss is-small is-light-green" href="https://bulma.io/atom.xml">
+                                                    <span class="icon is-small">
+                                                        <i class="fa fa-rss has-text-white"></i>
+                                                    </span>
+                                                    <span>Subscribe</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link" href="/documentation/overview/start/">
+                            <figure class="image is-32x32" style="margin-right:.5em;">
+                                <img src="https://lh3.googleusercontent.com/-HqtRKk8CI_Y/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT7BMTqURpGoFnEZZi68CIEGKv5QtA/mo/photo.jpg?sz=46">
+                            </figure>
+                            Tim Satu
+                        </a>
+                        <div class="navbar-dropdown is-right">
+                            <a class="navbar-item" href="/documentation/overview/start/">
+                                Settings
+                            </a>
+                            <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                                Sign Out
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- END NAV -->
+    <!-- MAIN & SIDE NAV -->
+    <main class="app-main-dashboard">
+        <section class="section">
+            <div class="columns">
+                <div id="sideNav" class="column is-2 is-narrow-mobile is-fullheight section is-hidden-mobile">
+                    <aside class="menu hero is-fullheight is-fixed">
+                        <ul class="menu-list">
+                            <li>
+                                <a href="admin-dashboard.html">
+                                    <i class="fa fa-home fa-fw"></i>
+                                    Beranda
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-active" href="admin-pembayaran.html">
+                                    <i class="fa fa-credit-card fa-fw"></i>
+                                    Pembayaran
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-data-tim.html">
+                                    <i class="fa fa-pencil-square-o fa-fw"></i>
+                                    Data Tim
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="fa fa-bullhorn fa-fw"></i>
+                                    Pengumuman
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a class="is-size-8">Daftar Pengumuman</a>
+                                    </li>
+                                    <li>
+                                        <a class="is-size-8">Tambah Pengumuman</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="fa fa-question-circle-o fa-fw"></i>
+                                    FAQ
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a class="is-size-8">Daftar FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a class="is-size-8">Tambah FAQ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="fa fa-comments-o fa-sw"></i>
+                                    Chat
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="menu-footer has-text-left">
+                            <p>
+                                <a class="has-text-light-green" href="https://facebook.com/jointsugm" class="">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a class="has-text-light-green" href="https://instagram.com/jointsugm" class="">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a class="has-text-light-green" href="https://twitter.com/jointsugm" class="">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a class="has-text-light-green" href="https://www.linkedin.com/company/13177165" class="">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </p>
+                            <p>© 2018 Joints UGM</p>
+                            <br>
+                        </div>
+                    </aside>
+                </div>
+                <div class="column">
+                    <section class="main">
+                        <!-- End of Judul & Search -->
+                        <div class="level">
+                            <div class="level-left">
+                                <div class="level-item">
+                                    <h1 class="subtitle">Data Pembayaran</h1>
+                                </div>
+                            </div>
+                            <div class="level-right">
+                                <div class="level-item">
+                                    <!-- Search -->
+                                    <div class="field has-addons">
+                                        <div class="control">
+                                            <input class="input" type="text" placeholder="Search">
+                                        </div>
+                                        <div class="control">
+                                            <a class="button is-light-green">
+                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- End of Search -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Judul & Search -->
+                        <!-- Table -->
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <abbr title="Nomor">No</abbr>
+                                    </th>
+                                    <th>Nama Tim</th>
+                                    <th>Nominal</th>
+                                    <th>Tanggal Bayar</th>
+                                    <th>Konfirmasi</th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <th>
+                                        <abbr title="Nomor">No</abbr>
+                                    </th>
+                                    <th>Nama Tim</th>
+                                    <th>Nominal</th>
+                                    <th>Tanggal Bayar</th>
+                                    <th>Konfirmasi</th>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <td>
+                                        Manchester City
+                                    </td>
+                                    <td>38</td>
+                                    <td>23</td>
+                                    <td>
+                                        <a class="button is-bni">
+                                            <span>BNI</span>
+                                        </a>
+                                        <a class="button is-mandiri">
+                                            <span>MANDIRI</span>
+                                        </a>
+                                        <a class="button is-danger is-bca">
+                                            <span>BCA</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <td>
+                                        Arsenal
+                                    </td>
+                                    <td>38</td>
+                                    <td>20</td>
+                                    <td>
+                                        <a class="button is-bni">
+                                            <span>BNI</span>
+                                        </a>
+                                        <a class="button is-mandiri">
+                                            <span>MANDIRI</span>
+                                        </a>
+                                        <a class="button is-danger is-bca">
+                                            <span>BCA</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>3</th>
+                                    <td>
+                                        Tottenham Hotspur
+                                    </td>
+                                    <td>38</td>
+                                    <td>19</td>
+                                    <td>
+                                        <a class="button is-bni">
+                                            <span>BNI</span>
+                                        </a>
+                                        <a class="button is-mandiri">
+                                            <span>MANDIRI</span>
+                                        </a>
+                                        <a class="button is-danger is-bca">
+                                            <span>BCA</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="is-selected">
+                                    <th>4</th>
+                                    <td>
+                                        Manchester City
+                                    </td>
+                                    <td>38</td>
+                                    <td>19</td>
+                                    <td>
+                                        <a class="button is-bni">
+                                            <span>BNI</span>
+                                        </a>
+                                        <a class="button is-mandiri">
+                                            <span>MANDIRI</span>
+                                        </a>
+                                        <a class="button is-danger is-bca">
+                                            <span>BCA</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>5</th>
+                                    <td>
+                                        Manchester United
+                                    </td>
+                                    <td>38</td>
+                                    <td>19</td>
+                                    <td>
+                                        <a class="button is-bni">
+                                            <span>BNI</span>
+                                        </a>
+                                        <a class="button is-mandiri">
+                                            <span>MANDIRI</span>
+                                        </a>
+                                        <a class="button is-danger is-bca">
+                                            <span>BCA</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>6</th>
+                                    <td>
+                                        Southampton
+                                    </td>
+                                    <td>38</td>
+                                    <td>18</td>
+                                    <td>
+                                        <a class="button is-bni">
+                                            <span>BNI</span>
+                                        </a>
+                                        <a class="button is-mandiri">
+                                            <span>MANDIRI</span>
+                                        </a>
+                                        <a class="button is-danger is-bca">
+                                            <span>BCA</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>7</th>
+                                    <td>
+                                        West Ham United
+                                    </td>
+                                    <td>38</td>
+                                    <td>16</td>
+                                    <td>
+                                        <a class="button is-bni">
+                                            <span>BNI</span>
+                                        </a>
+                                        <a class="button is-mandiri">
+                                            <span>MANDIRI</span>
+                                        </a>
+                                        <a class="button is-danger is-bca">
+                                            <span>BCA</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>8</th>
+                                    <td>
+                                        Liverpool
+                                    </td>
+                                    <td>38</td>
+                                    <td>16</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <th>9</th>
+                                    <td>
+                                        Stoke City
+                                    </td>
+                                    <td>38</td>
+                                    <td>14</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>10</th>
+                                    <td>
+                                        Chelsea
+                                    </td>
+                                    <td>38</td>
+                                    <td>12</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>11</th>
+                                    <td>
+                                        <a href="https://en.wikipedia.org/wiki/Everton_F.C." title="Everton F.C.">Everton</a>
+                                    </td>
+                                    <td>38</td>
+                                    <td>11</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>12</th>
+                                    <td>
+                                        <a href="https://en.wikipedia.org/wiki/Swansea_City_A.F.C." title="Swansea City A.F.C.">Swansea City</a>
+                                    </td>
+                                    <td>38</td>
+                                    <td>12</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>13</th>
+                                    <td>
+                                        <a href="https://en.wikipedia.org/wiki/Watford_F.C." title="Watford F.C.">Watford</a>
+                                    </td>
+                                    <td>38</td>
+                                    <td>12</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>14</th>
+                                    <td>
+                                        <a href="https://en.wikipedia.org/wiki/West_Bromwich_Albion_F.C." title="West Bromwich Albion F.C.">West Bromwich Albion</a>
+                                    </td>
+                                    <td>38</td>
+                                    <td>10</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>15</th>
+                                    <td>
+                                        <a href="https://en.wikipedia.org/wiki/Crystal_Palace_F.C." title="Crystal Palace F.C.">Crystal Palace</a>
+                                    </td>
+                                    <td>38</td>
+                                    <td>11</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>16</th>
+                                    <td>
+                                        <a href="https://en.wikipedia.org/wiki/A.F.C._Bournemouth" title="A.F.C. Bournemouth">AFC Bournemouth</a>
+                                    </td>
+                                    <td>38</td>
+                                    <td>11</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>17</th>
+                                    <td>
+                                        <a href="https://en.wikipedia.org/wiki/Sunderland_A.F.C." title="Sunderland A.F.C.">Sunderland</a>
+                                    </td>
+                                    <td>38</td>
+                                    <td>9</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>18</th>
+                                    <td>
+                                        <a href="https://en.wikipedia.org/wiki/Newcastle_United_F.C." title="Newcastle United F.C.">Newcastle United</a>
+                                        <strong>(R)</strong>
+                                    </td>
+                                    <td>38</td>
+                                    <td>9</td>
+                                    <td>Relegation to the
+                                        <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship" title="2016–17 Football League Championship">Football League Championship</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>19</th>
+                                    <td>
+                                        <a href="https://en.wikipedia.org/wiki/Norwich_City_F.C." title="Norwich City F.C.">Norwich City</a>
+                                        <strong>(R)</strong>
+                                    </td>
+                                    <td>38</td>
+                                    <td>9</td>
+                                    <td>Relegation to the
+                                        <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship" title="2016–17 Football League Championship">Football League Championship</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>20</th>
+                                    <td>
+                                        <a href="https://en.wikipedia.org/wiki/Aston_Villa_F.C." title="Aston Villa F.C.">Aston Villa</a>
+                                        <strong>(R)</strong>
+                                    </td>
+                                    <td>38</td>
+                                    <td>3</td>
+                                    <td>Relegation to the
+                                        <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship" title="2016–17 Football League Championship">Football League Championship</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- End of Table -->
+                        <!-- Pagination -->
+                        <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+                            <a class="pagination-previous">Previous</a>
+                            <a class="pagination-next">Next page</a>
+                            <ul class="pagination-list">
+                                <li>
+                                    <a class="pagination-link" aria-label="Goto page 1">1</a>
+                                </li>
+                                <li>
+                                    <span class="pagination-ellipsis">&hellip;</span>
+                                </li>
+                                <li>
+                                    <a class="pagination-link" aria-label="Goto page 45">45</a>
+                                </li>
+                                <li>
+                                    <a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a>
+                                </li>
+                                <li>
+                                    <a class="pagination-link" aria-label="Goto page 47">47</a>
+                                </li>
+                                <li>
+                                    <span class="pagination-ellipsis">&hellip;</span>
+                                </li>
+                                <li>
+                                    <a class="pagination-link" aria-label="Goto page 86">86</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- End of Pagination -->
+                    </section>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- END MAIN & SIDE NAV -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>

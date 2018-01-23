@@ -32,6 +32,12 @@ $twitter: #55acee;
 $twitter-invert: findColorInvert($twitter);
 $github: #333;
 $github-invert: findColorInvert($github);
+$bni: #F15A23;
+$bni-invert: findColorInvert($bni);
+$mandiri: #F7C816;
+$mandiri-invert: findColorInvert($mandiri);
+$bca: #1A4C93;
+$bca-invert: findColorInvert($bca);
 //Add new color variables to the color map.
 @import "node_modules/bulma/sass/utilities/derived-variables.sass";
 $addColors: (
@@ -41,7 +47,10 @@ $addColors: (
   "purple": ($purple, $purple-invert),
   "pink": ($pink, $pink-invert),
   "orange":($orange, $orange-invert),
-  "light-green":($light-green, $light-green-invert)
+  "light-green":($light-green, $light-green-invert),
+  "bni":($bni, $bni-invert),
+  "mandiri":($mandiri, $mandiri-invert),
+  "bca":($bca, $bca-invert)
 );
 $colors: map-merge($colors, $addColors);
 // EDIT
@@ -101,6 +110,16 @@ $label-weight: 300;
   #comingsoon {
       visibility: hidden;
   }
+}
+
+// Custom font size 
+.is-size-8 {
+  font-size: 0.85rem !important;
+}
+
+// For hide side nav
+.is-toggle {
+  display: none !important;
 }
 
 // 6. Import the rest of Bulma

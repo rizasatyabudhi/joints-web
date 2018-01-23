@@ -195,10 +195,8 @@ body {
       .app-main-dashboard .column .main .box.notification {
         box-shadow: 0 10px 30px 0 rgba(229, 238, 242, 0.5);
         border-radius: 2px; }
-    .app-main-dashboard .column .main .table {
-      width: 100%; }
-      .app-main-dashboard .column .main .table .is-selected {
-        background-color: #65cb67; }
+    .app-main-dashboard .column .main .table .is-selected {
+      background-color: #65cb67; }
     .app-main-dashboard .column .main .pagination a {
       color: #65cb67; }
       .app-main-dashboard .column .main .pagination a.is-current {

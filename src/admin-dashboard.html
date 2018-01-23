@@ -15,145 +15,146 @@
 <body>
   <!-- START NAV -->
   <header class="app-navbar-dashboard">
-      <nav class="navbar is-transparent">
-          <div class="navbar-brand">
-              <a id="hamburgerMenu" class="fa fa-bars navbar-item is-narrow-mobile is-fullheight is-hidden-mobile">
+    <nav class="navbar is-transparent">
+      <div class="navbar-brand">
+        <a id="hamburgerMenu" class="fa fa-bars navbar-item is-narrow-mobile is-fullheight is-hidden-mobile">
+        </a>
+        <a class="navbar-item">
+          <img src="images/logo-hijau.png" alt="Logo">
+        </a>
+        <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenuHeroC" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item is-hidden-tablet">
+            Beranda
+          </a>
+          <a class="navbar-item is-hidden-tablet">
+            Pembayaran
+          </a>
+          <a class="navbar-item is-hidden-tablet">
+            Data Tim
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable is-hidden-tablet">
+            <a class="navbar-link">
+              Pengumuman
+            </a>
+            <div class="navbar-dropdown is-right">
+              <a class="navbar-item" href="/documentation/overview/start/">
+                Daftar Pengumuman
               </a>
-              <a class="navbar-item">
-                  <img src="images/logo-hijau.png" alt="Logo">
+              <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                Tambah Pengumuman
               </a>
-              <span class="navbar-burger burger" data-target="navbarMenuHeroC">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable is-hidden-tablet">
+            <a class="navbar-link">
+              FAQ
+            </a>
+            <div class="navbar-dropdown is-right">
+              <a class="navbar-item" href="/documentation/overview/start/">
+                Daftar FAQ
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                Tambah FAQ
+              </a>
+            </div>
+          </div>
+          <a class="navbar-item is-hidden-tablet">
+            Chat
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-item" href="/documentation/overview/start/">
+              <span class="badge is-badge-danger" data-badge="1">
+                <i class="fa fa-bell-o fa-fw"></i>
               </span>
-          </div>
-          <div id="navbarMenuHeroC" class="navbar-menu">
-              <div class="navbar-end">
-                  <a class="navbar-item is-hidden-tablet">
-                      Beranda
-                  </a>
-                  <a class="navbar-item is-hidden-tablet">
-                      Pembayaran
-                  </a>
-                  <a class="navbar-item is-hidden-tablet">
-                      Data Tim
-                  </a>
-                  <div class="navbar-item has-dropdown is-hoverable is-hidden-tablet">
-                      <a class="navbar-link">
-                          Pengumuman
-                      </a>
-                      <div class="navbar-dropdown is-right">
-                          <a class="navbar-item" href="/documentation/overview/start/">
-                              Daftar Pengumuman
-                          </a>
-                          <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
-                              Tambah Pengumuman
-                          </a>
+            </a>
+            <div class="navbar-dropdown is-right">
+              <a class="navbar-item" href="/2017/11/14/bulma-is-on-patreon/">
+                <div class="navbar-content">
+                  <p>
+                    <small class="has-text-link">14 Nov 2017</small>
+                  </p>
+                  <p>Bulma is on Patreon!</p>
+                </div>
+              </a>
+
+              <a class="navbar-item" href="/2017/11/01/fixed-navbar/">
+                <div class="navbar-content">
+                  <p>
+                    <small class="has-text-link">01 Nov 2017</small>
+                  </p>
+                  <p>New feature: fixed navbar</p>
+                </div>
+              </a>
+
+              <a class="navbar-item" href="/2017/10/22/list-of-buttons/">
+                <div class="navbar-content">
+                  <p>
+                    <small class="has-text-link">22 Oct 2017</small>
+                  </p>
+                  <p>New feature: list of buttons</p>
+                </div>
+              </a>
+
+              <a class="navbar-item" href="https://bulma.io/blog/">
+                More posts
+              </a>
+              <hr class="navbar-divider">
+              <div class="navbar-item">
+                <div class="navbar-content">
+                  <div class="level is-mobile">
+                    <div class="level-left">
+                      <div class="level-item">
+                        <strong>Stay up to date!</strong>
                       </div>
-                  </div>
-                  <div class="navbar-item has-dropdown is-hoverable is-hidden-tablet">
-                      <a class="navbar-link">
-                          FAQ
-                      </a>
-                      <div class="navbar-dropdown is-right">
-                          <a class="navbar-item" href="/documentation/overview/start/">
-                              Daftar FAQ
-                          </a>
-                          <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
-                              Tambah FAQ
-                          </a>
-                      </div>
-                  </div>
-                  <a class="navbar-item is-hidden-tablet">
-                      Chat
-                  </a>
-                  <div class="navbar-item has-dropdown is-hoverable">
-                      <a class="navbar-item" href="/documentation/overview/start/">
-                          <span class="badge is-badge-danger" data-badge="1">
-                              <i class="fa fa-bell-o fa-fw"></i>
+                    </div>
+                    <div class="level-right">
+                      <div class="level-item">
+                        <a class="button bd-is-rss is-small is-light-green" href="https://bulma.io/atom.xml">
+                          <span class="icon is-small">
+                            <i class="fa fa-rss has-text-white"></i>
                           </span>
-                      </a>
-                      <div class="navbar-dropdown is-right">
-                          <a class="navbar-item" href="/2017/11/14/bulma-is-on-patreon/">
-                              <div class="navbar-content">
-                                  <p>
-                                      <small class="has-text-link">14 Nov 2017</small>
-                                  </p>
-                                  <p>Bulma is on Patreon!</p>
-                              </div>
-                          </a>
-
-                          <a class="navbar-item" href="/2017/11/01/fixed-navbar/">
-                              <div class="navbar-content">
-                                  <p>
-                                      <small class="has-text-link">01 Nov 2017</small>
-                                  </p>
-                                  <p>New feature: fixed navbar</p>
-                              </div>
-                          </a>
-
-                          <a class="navbar-item" href="/2017/10/22/list-of-buttons/">
-                              <div class="navbar-content">
-                                  <p>
-                                      <small class="has-text-link">22 Oct 2017</small>
-                                  </p>
-                                  <p>New feature: list of buttons</p>
-                              </div>
-                          </a>
-
-                          <a class="navbar-item" href="https://bulma.io/blog/">
-                              More posts
-                          </a>
-                          <hr class="navbar-divider">
-                          <div class="navbar-item">
-                              <div class="navbar-content">
-                                  <div class="level is-mobile">
-                                      <div class="level-left">
-                                          <div class="level-item">
-                                              <strong>Stay up to date!</strong>
-                                          </div>
-                                      </div>
-                                      <div class="level-right">
-                                          <div class="level-item">
-                                              <a class="button bd-is-rss is-small is-light-green" href="https://bulma.io/atom.xml">
-                                                  <span class="icon is-small">
-                                                      <i class="fa fa-rss has-text-white"></i>
-                                                  </span>
-                                                  <span>Subscribe</span>
-                                              </a>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
+                          <span>Subscribe</span>
+                        </a>
                       </div>
+                    </div>
                   </div>
-                  <div class="navbar-item has-dropdown is-hoverable">
-                      <a class="navbar-link" href="/documentation/overview/start/">
-                          <figure class="image is-32x32" style="margin-right:.5em;">
-                              <img src="https://lh3.googleusercontent.com/-HqtRKk8CI_Y/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT7BMTqURpGoFnEZZi68CIEGKv5QtA/mo/photo.jpg?sz=46">
-                          </figure>
-                          Tim Satu
-                      </a>
-                      <div class="navbar-dropdown is-right">
-                          <a class="navbar-item" href="/documentation/overview/start/">
-                              Settings
-                          </a>
-                          <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
-                              Sign Out
-                          </a>
-                      </div>
-                  </div>
+                </div>
               </div>
+            </div>
           </div>
-      </nav>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="/documentation/overview/start/">
+              <figure class="image is-32x32" style="margin-right:.5em;">
+                <img src="https://lh3.googleusercontent.com/-HqtRKk8CI_Y/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT7BMTqURpGoFnEZZi68CIEGKv5QtA/mo/photo.jpg?sz=46">
+              </figure>
+              Tim Satu
+            </a>
+            <div class="navbar-dropdown is-right">
+              <a class="navbar-item" href="/documentation/overview/start/">
+                Settings
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                Sign Out
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
   </header>
   <!-- END NAV -->
   <!-- MAIN & SIDE NAV -->
   <main class="app-main-dashboard">
     <section class="section">
       <div class="columns">
+        <!-- Sidenav -->
         <div id="sideNav" class="column is-2 is-narrow-mobile is-fullheight section is-hidden-mobile">
           <aside class="menu hero is-fullheight is-fixed">
             <ul class="menu-list">
@@ -230,147 +231,194 @@
             </div>
           </aside>
         </div>
+        <!-- End of Sidenav -->
+        <!-- Main -->
         <div class="column">
           <section class="main">
-            <!-- Judul & Date -->
-            <div class="level">
-              <div class="level-left">
-                <div class="level-item">
-                  <h1 class="subtitle">Selamat Datang di Beranda</h1>
-                </div>
-              </div>
-              <div class="level-right">
-                <div class="level-item">
-                  <h1 class="is-size-6">March 8, 2017 - April 6, 2017</h1>
-                </div>
-              </div>
-            </div>
-            <!-- End of Judul & Date -->            
-            <div class="columns is-multiline">
-              <div class="column">
-                <div class="box notification is-primary">
-                  <div class="heading">Top Seller Total</div>
-                  <div class="title">56,950</div>
-                  <div class="level">
-                    <div class="level-item">
-                      <div class="">
-                        <div class="heading">Sales $</div>
-                        <div class="title is-5">250K</div>
-                      </div>
-                    </div>
-                    <div class="level-item">
-                      <div class="">
-                        <div class="heading">Overall $</div>
-                        <div class="title is-5">750K</div>
-                      </div>
-                    </div>
-                    <div class="level-item">
-                      <div class="">
-                        <div class="heading">Sales %</div>
-                        <div class="title is-5">25%</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="column">
-                <div class="box notification is-warning">
-                  <div class="heading">Revenue / Expenses</div>
-                  <div class="title">55% / 45%</div>
-                  <div class="level">
-                    <div class="level-item">
-                      <div class="">
-                        <div class="heading">Rev Prod $</div>
-                        <div class="title is-5">30%</div>
-                      </div>
-                    </div>
-                    <div class="level-item">
-                      <div class="">
-                        <div class="heading">Rev Serv $</div>
-                        <div class="title is-5">25%</div>
-                      </div>
-                    </div>
-                    <div class="level-item">
-                      <div class="">
-                        <div class="heading">Exp %</div>
-                        <div class="title is-5">45%</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="column">
-                <div class="box notification is-info">
-                  <div class="heading">Feedback Activity</div>
-                  <div class="title">78% ↑</div>
-                  <div class="level">
-                    <div class="level-item">
-                      <div class="">
-                        <div class="heading">Pos</div>
-                        <div class="title is-5">1560</div>
-                      </div>
-                    </div>
-                    <div class="level-item">
-                      <div class="">
-                        <div class="heading">Neg</div>
-                        <div class="title is-5">368</div>
-                      </div>
-                    </div>
-                    <div class="level-item">
-                      <div class="">
-                        <div class="heading">Pos/Neg %</div>
-                        <div class="title is-5">77% / 23%</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="column">
-                <div class="box notification is-danger">
-                  <div class="heading">Orders / Returns</div>
-                  <div class="title">75% / 25%</div>
-                  <div class="level">
-                    <div class="level-item">
-                      <div class="">
-                        <div class="heading">Orders $</div>
-                        <div class="title is-5">425K</div>
-                      </div>
-                    </div>
-                    <div class="level-item">
-                      <div class="">
-                        <div class="heading">Returns $</div>
-                        <div class="title is-5">106K</div>
-                      </div>
-                    </div>
-                    <div class="level-item">
-                      <div class="">
-                        <div class="heading">Success %</div>
-                        <div class="title is-5">+ 28,5%</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="columns">
+              <!-- Rekap Peserta Joints -->
               <div class="column">
-                <div class="box"></div>
+                <!-- Judul -->
+                <h1 class="subtitle has-text-weight-semibold">Rekap Peserta Joints</h1>
+                <!-- End of Judul -->
+                <div class="columns is-multiline">
+                  <div class="column is-6">
+                    <div class="box notification is-primary">
+                      <div class="heading">PCS</div>
+                      <div class="title">550</div>
+                      <div class="level">
+                        <div class="level-item">
+                          <div class="">
+                            <div class="heading">Sudah Bayar</div>
+                            <div class="title is-5">250</div>
+                          </div>
+                        </div>
+                        <div class="level-item">
+                          <div class="">
+                            <div class="heading">Belum Bayar</div>
+                            <div class="title is-5">750</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column is-6">
+                    <div class="box notification is-warning">
+                      <div class="heading">CTF</div>
+                      <div class="title">500</div>
+                      <div class="level">
+                        <div class="level-item">
+                          <div class="">
+                            <div class="heading">Sudah Bayar</div>
+                            <div class="title is-5">250</div>
+                          </div>
+                        </div>
+                        <div class="level-item">
+                          <div class="">
+                            <div class="heading">Belum Bayar</div>
+                            <div class="title is-5">750</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column is-6">
+                    <div class="box notification is-info">
+                      <div class="heading">Data Mining</div>
+                      <div class="title">780</div>
+                      <div class="level">
+                        <div class="level-item">
+                          <div class="">
+                            <div class="heading">Sudah Bayar</div>
+                            <div class="title is-5">250</div>
+                          </div>
+                        </div>
+                        <div class="level-item">
+                          <div class="">
+                            <div class="heading">Belum Bayar</div>
+                            <div class="title is-5">750</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column is-6">
+                    <div class="box notification is-danger">
+                      <div class="heading">BIP</div>
+                      <div class="title">755</div>
+                      <div class="level">
+                        <div class="level-item">
+                          <div class="">
+                            <div class="heading">Sudah Bayar</div>
+                            <div class="title is-5">250</div>
+                          </div>
+                        </div>
+                        <div class="level-item">
+                          <div class="">
+                            <div class="heading">Belum Bayar</div>
+                            <div class="title is-5">750</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column is-6">
+                    <div class="box notification is-purple">
+                      <div class="heading">Apps Innovation</div>
+                      <div class="title">756</div>
+                      <div class="level">
+                        <div class="level-item">
+                          <div class="">
+                            <div class="heading">Sudah Bayar</div>
+                            <div class="title is-5">250</div>
+                          </div>
+                        </div>
+                        <div class="level-item">
+                          <div class="">
+                            <div class="heading">Belum Bayar</div>
+                            <div class="title is-5">750</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <!-- End of Rekap Peserta Joints -->
+              <!-- Rekap Peserta C-Compiler -->                            
               <div class="column">
-                <div class="box"></div>
+                <!-- Judul -->
+                <h1 class="subtitle has-text-weight-semibold">Rekap Peserta C-compiler</h1>
+                <!-- End of Judul -->
+                <div class="columns is-multiline">
+                  <div class="column is-6">
+                    <div class="box notification is-primary">
+                      <div class="heading">PCS</div>
+                      <div class="title">550</div>
+                    </div>
+                  </div>
+                  <div class="column is-6">
+                    <div class="box notification is-warning">
+                      <div class="heading">CTF</div>
+                      <div class="title">500</div>
+                    </div>
+                  </div>
+                  <div class="column is-6">
+                    <div class="box notification is-info">
+                      <div class="heading">Data Mining</div>
+                      <div class="title">780</div>
+                    </div>
+                  </div>
+                  <div class="column is-6">
+                    <div class="box notification is-danger">
+                      <div class="heading">BIP</div>
+                      <div class="title">755</div>
+                    </div>
+                  </div>
+                  <div class="column is-6">
+                    <div class="box notification is-purple">
+                      <div class="heading">Apps Innovation</div>
+                      <div class="title">756</div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="column">
-                <div class="box"></div>
+              <!-- End of Rekap Peserta C-Compiler -->                                          
+            </div>
+            <!-- Rekap Pembayaran -->
+            <h1 class="subtitle has-text-weight-semibold">Rekap Pembayaran</h1>
+            <div class="columns is-multiline">
+              <div class="column is-12">
+                <div class="box notification is-light-green">
+                  <div class="heading">Total</div>
+                  <div class="title">Rp 10.000.000</div>
+                </div>
               </div>
-              <div class="column">
-                <div class="box"></div>
+              <div class="column is-4">
+                <div class="box notification is-bni">
+                  <div class="heading">BNI</div>
+                  <div class="title">Rp 10.000.000</div>
+                </div>
+              </div>
+              <div class="column is-4">
+                <div class="box notification is-mandiri">
+                  <div class="heading">Mandiri</div>
+                  <div class="title">Rp 12.000.000</div>
+                </div>
+              </div>
+              <div class="column is-4">
+                <div class="box notification is-bca">
+                  <div class="heading">BCA</div>
+                  <div class="title">Rp 13.000.000</div>
+                </div>
               </div>
             </div>
+            <!-- End of Rekap Pembayaran -->
           </section>
         </div>
+        <!-- End of Main -->
       </div>
     </section>
-
   </main>
   <!-- END MAIN & SIDE NAV -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>

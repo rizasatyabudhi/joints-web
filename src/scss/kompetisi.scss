@@ -114,5 +114,20 @@
         }
       }
     }
+    &.is-sponsor-medpar {
+      .is-sponsor {
+        @include mobile {
+          text-align: center !important;
+        }
+      }
+      .is-medpar {
+        @include mobile {
+          text-align: center !important;
+        }
+        img {
+          max-height: 50px !important;
+        }
+      }
+    }
   }
 }

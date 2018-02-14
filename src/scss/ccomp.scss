@@ -192,5 +192,20 @@
         box-shadow: 0 5px 4px 0 rgba(219, 219, 219, 0.5);
       }
     }
+    &.is-sponsor-medpar {
+      .is-sponsor {
+        @include mobile {
+          text-align: center !important;
+        }
+      }
+      .is-medpar {
+        @include mobile {
+          text-align: center !important;
+        }
+        img {
+          max-height: 50px !important;
+        }
+      }
+    }
   }
 }

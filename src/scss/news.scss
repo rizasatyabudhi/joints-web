@@ -1,0 +1,32 @@
+@import "node_modules/bulma/sass/utilities/mixins";
+
+.app-content-news {
+    section {
+        &.is-intro {
+            background-color: $pink;
+            background: url(../images/index/skew-bottom.png), linear-gradient(135deg, $pink, #e5487c);
+            background-size: 100%, cover, cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+        &.is-news {
+            .columns:nth-child(1) {
+                margin-top: -250px; 
+            }
+            @include mobile {
+                .columns:nth-child(1) {
+                    margin-top: -90px;
+                }
+            }
+            .card {
+                // box-shadow: 0 10px 30px 0 rgba(229, 238, 242, 0.5);
+            }
+            a {
+                &.is-width {
+                    padding-left: 3em;
+                    padding-right: 3em;
+                }
+            }
+        }
+    }
+}

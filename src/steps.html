@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <title>Joints</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="app-header">
+        <nav class="navbar is-transparent">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="index.html">
+                        <img id="logoJoints" src="images/index/logo.png" alt="Logo">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+                <div id="navbarMenuHeroC" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item">
+                            IT Day
+                        </a>
+                        <a class="navbar-item">
+                            Tech Talk
+                        </a>
+                        <a class="navbar-item" href="kompetisi.html">
+                            Kompetisi
+                        </a>
+                        <a id="contact" class="navbar-item">
+                            Contact
+                        </a>
+                        <span class="navbar-item">
+                            <a id="loginButton" class="button is-inverted is-outlined" href="login.html">
+                                Log In
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main class="app-content">
+        <!-- Intro -->
+        <section class="hero is-fullheight">
+            <!-- Hero content: will be in the middle -->
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-vcentered is-reverse-mobile">
+                        <div class="column">
+                            <div class="steps" id="stepsDemo">
+                                <div class="step-item is-active is-pink">
+                                    <div class="step-marker">1</div>
+                                    <div class="step-details">
+                                        <p class="step-title">Account</p>
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-marker">2</div>
+                                    <div class="step-details">
+                                        <p class="step-title">Profile</p>
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-marker">3</div>
+                                    <div class="step-details">
+                                        <p class="step-title">Social</p>
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-marker">4</div>
+                                    <div class="step-details">
+                                        <p class="step-title">Finish</p>
+                                    </div>
+                                </div>
+                                <div class="steps-content">
+                                    <div class="step-content has-text-centered is-active">
+                                        <div class="field is-horizontal">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Username</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input class="input" name="username" id="username" type="text" placeholder="Username" autofocus data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field is-horizontal">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Password</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control has-icon has-icon-right">
+                                                        <input class="input" type="password" name="password" id="password" placeholder="Password" data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field is-horizontal">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Confirm password</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control has-icon has-icon-right">
+                                                        <input class="input" type="password" name="password_confirm" id="password_confirm" placeholder="Confirm password" data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="step-content has-text-centered">
+                                        <div class="field is-horizontal">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Firstname</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input class="input" name="firstname" id="firstname" type="text" placeholder="Firstname" autofocus data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field is-horizontal">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Last name</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control has-icon has-icon-right">
+                                                        <input class="input" type="text" name="lastname" id="lastname" placeholder="Last name" data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field is-horizontal">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Email</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control has-icon has-icon-right">
+                                                        <input class="input" type="email" name="email" id="email" placeholder="Email" data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="step-content has-text-centered">
+                                        <div class="field is-horizontal">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Facebook account</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input class="input" name="facebook" id="facebook" type="text" placeholder="Facebook account url" autofocus data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field is-horizontal">
+                                            <div class="field-label is-normal">
+                                                <label class="label">Twitter account</label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input class="input" name="twitter" id="twitter" type="text" placeholder="Twitter account url" autofocus data-validate="require">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="step-content has-text-centered">
+                                        <h1 class="title is-4">Your account is now created !</h1>
+                                    </div>
+                                </div>
+                                <div class="steps-actions">
+                                    <div class="steps-action">
+                                        <a href="#" data-nav="previous" class="button is-light">previous</a>
+                                    </div>
+                                    <div class="steps-action">
+                                        <a href="#" data-nav="next" class="button is-light">Next</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Intro -->
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="js/steps.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init();
+
+        $("#selengkapnya").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#acara").offset().top
+            }, 1000);
+        });
+    </script>
+
+</body>
+
+</html>

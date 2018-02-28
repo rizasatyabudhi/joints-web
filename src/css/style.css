@@ -9370,6 +9370,17 @@ label.panel-block {
           filter: none;
           -webkit-filter: grayscale(0); }
 
+@media screen and (max-width: 768px) {
+  .app-content-ccomp section.is-sponsor-medpar .is-sponsor {
+    text-align: center !important; } }
+
+@media screen and (max-width: 768px) {
+  .app-content-ccomp section.is-sponsor-medpar .is-medpar {
+    text-align: center !important; } }
+
+.app-content-ccomp section.is-sponsor-medpar .is-medpar img {
+  max-height: 50px !important; }
+
 .app-footer-ccomp {
   padding: 3rem 1rem; }
   .app-footer-ccomp .container .content img {
@@ -9478,3 +9489,9 @@ label.panel-block {
 .app-content-news section.is-news a.is-width {
   padding-left: 3em;
   padding-right: 3em; }
+
+.app-content-steps section.is-steps .steps .step-item .step-details {
+  margin-top: 0;
+  margin-bottom: 2em; }
+  .app-content-steps section.is-steps .steps .step-item .step-details .step-title {
+    margin-top: -2.5rem; }

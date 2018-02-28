@@ -1,0 +1,17 @@
+.app-content-steps {
+    section {
+        &.is-steps {
+            .steps {
+                .step-item {
+                    .step-details {
+                        margin-top: 0;
+                        margin-bottom: 2em;
+                        .step-title {
+                            margin-top: -2.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

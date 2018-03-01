@@ -10,8 +10,31 @@
                             margin-top: -2.5rem;
                         }
                     }
+                    .step-marker {
+                        transition-delay: 0.5s;
+                    }
+                    &.is-active {
+                        .step-marker {
+                            background-color: #fff;
+                            border-color: $pink;
+                            color: $pink;
+                        }
+                    }
+                    &.is-completed {
+                        .step-marker {
+                            color: #fff;
+                            background-color: $pink;
+                        }
+                    }
                 }
             }
         }
     }
+}
+
+.steps .step-item::before {
+    background: linear-gradient(to left, #dbdbdb 50%, $pink 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease;
 }

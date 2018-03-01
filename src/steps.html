@@ -211,6 +211,21 @@
     <script src="js/steps.js"></script>
     <script src="js/timeline.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function () {
+            // buka tutup navbar hamburger
+            $(".navbar-burger").click(function () {
+                $("#navbarMenuHeroC").toggleClass("is-active");
+                $(".navbar-burger > span").toggleClass("is-active");
+                $("#loginButton").removeClass("is-inverted");
+            });
+
+            // mengganti login button menjadi warna pink
+            $("#loginButton").addClass("is-pink");
+            
+            $("#logoJoints").attr("src", "http://joints.id/images/logo-pink.png");
+        });
+    </script>
     <script type="text/javascript">
         AOS.init();
 

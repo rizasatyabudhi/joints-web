@@ -9508,6 +9508,9 @@ label.panel-block {
   color: #fff;
   background-color: #f06562; }
 
+.app-content-steps section.is-steps .steps .steps-content.box {
+  padding: 2rem !important; }
+
 .steps .step-item::before {
   background: linear-gradient(to left, #dbdbdb 50%, #f06562 50%);
   background-size: 200% 100%;

@@ -5,7 +5,6 @@
     <title>Joints</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -51,152 +50,326 @@
     </header>
     <!-- Main -->
     <main class="app-content-steps">
-        <!-- Intro -->
-        <section class="hero is-fullheight is-steps">
-            <!-- Hero content: will be in the middle -->
+        <!-- Steps -->
+        <section class="hero is-medium is-steps">
             <div class="hero-body">
                 <div class="container">
-                    <div class="columns is-vcentered is-reverse-mobile">
+                    <div class="columns is-vcentered">
                         <div class="column">
                             <div class="steps" id="stepsDemo">
+                                <!-- Info Perusahaan -->
                                 <div class="step-item is-active is-pink">
                                     <div class="step-marker">1</div>
                                     <div class="step-details">
-                                        <p class="step-title">Account</p>
+                                        <p class="step-title">Info Perusahaan</p>
                                     </div>
                                 </div>
+                                <!-- End of Info Perusahaan -->
+                                <!-- Contact Person -->
                                 <div class="step-item">
                                     <div class="step-marker">2</div>
                                     <div class="step-details">
-                                        <p class="step-title">Profile</p>
+                                        <p class="step-title">Contact Person</p>
                                     </div>
                                 </div>
+                                <!-- End of Contact Person -->
+                                <!-- Lowongan Pekerjaan -->
                                 <div class="step-item">
                                     <div class="step-marker">3</div>
                                     <div class="step-details">
-                                        <p class="step-title">Social</p>
+                                        <p class="step-title">Lowongan Pekerjaan</p>
                                     </div>
                                 </div>
+                                <!-- End of Lowongan Pekerjaan -->
+                                <!-- Finish -->
                                 <div class="step-item">
                                     <div class="step-marker">4</div>
                                     <div class="step-details">
                                         <p class="step-title">Finish</p>
                                     </div>
                                 </div>
-                                <div class="steps-content">
-                                    <div class="step-content has-text-centered is-active">
-                                        <div class="field is-horizontal">
-                                            <div class="field-label is-normal">
-                                                <label class="label">Username</label>
+                                <!-- End of Finish -->
+                                <div class="steps-content box">
+                                    <!-- Info Perusahaan Content -->
+                                    <div class="step-content is-active">
+                                        <!-- Nama & Nomor Telp/Fax -->
+                                        <div class="columns">
+                                            <div class="column">
+                                                <div class="field">
+                                                    <label class="label">Nama Perusahaan</label>
+                                                    <div class="field-body">
+                                                        <div class="field">
+                                                            <p class="control is-expanded has-icons-left">
+                                                                <input class="input" type="text" placeholder="Name">
+                                                                <span class="icon is-small is-left">
+                                                                    <i class="fa fa-user"></i>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
                                             </div>
+                                            <div class="column">
+                                                <div class="field">
+                                                    <label class="label">Nomor Telepon/Fax</label>
+                                                    <div class="field-body">
+                                                        <div class="field">
+                                                            <p class="control is-expanded has-icons-left">
+                                                                <input class="input" type="text" placeholder="Name">
+                                                                <span class="icon is-small is-left">
+                                                                    <i class="fa fa-user"></i>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End of Nama & Nomor Telp/Fax -->
+                                        <!-- Alamat Perusahaan -->
+                                        <div class="field">
+                                            <label class="label">Alamat Perusahaan</label>
                                             <div class="field-body">
                                                 <div class="field">
                                                     <div class="control">
-                                                        <input class="input" name="username" id="username" type="text" placeholder="Username" autofocus data-validate="require">
+                                                        <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="field is-horizontal">
-                                            <div class="field-label is-normal">
-                                                <label class="label">Password</label>
-                                            </div>
-                                            <div class="field-body">
+                                        <!-- End of Alamat Perusahaan -->
+                                        <!-- Stand & Pembayaran -->                                                                                
+                                        <div class="columns">
+                                            <div class="column">
                                                 <div class="field">
-                                                    <div class="control has-icon has-icon-right">
-                                                        <input class="input" type="password" name="password" id="password" placeholder="Password" data-validate="require">
+                                                    <label class="label">Pilih Stand</label>
+                                                    <div class="field-body">
+                                                        <div class="field is-expanded">
+                                                            <div class="control">
+                                                                <div class="select is-fullwidth">
+                                                                    <select>
+                                                                        <option>Standard</option>
+                                                                        <option>Deluxe</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="field is-horizontal">
-                                            <div class="field-label is-normal">
-                                                <label class="label">Confirm password</label>
-                                            </div>
-                                            <div class="field-body">
+                                            <div class="column">
                                                 <div class="field">
-                                                    <div class="control has-icon has-icon-right">
-                                                        <input class="input" type="password" name="password_confirm" id="password_confirm" placeholder="Confirm password" data-validate="require">
+                                                    <label class="label">Pembayaran</label>
+                                                    <div class="field-body">
+                                                        <div class="field is-expanded">
+                                                            <div class="control">
+                                                                <div class="select is-fullwidth">
+                                                                    <select>
+                                                                        <option>Transfer</option>
+                                                                        <option>Bayar Langsung</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <!-- End of Stand & Pembayaran -->                                                                                                                        
+                                        <!-- Checkbox Info Perusahaan Content -->
+                                        <label class="checkbox">
+                                            <input type="checkbox"> Dengan ini menyatakan
+                                            <span class="has-text-pink">
+                                                <i>bersedia</i>
+                                            </span> mengikuti kegiatan Career Day JOINTS 2018
+                                        </label>
+                                        <!-- End of Checkbox Info Perusahaan Content -->
                                     </div>
+                                    <!-- End of Info Perusahaan Content -->
+                                    <!-- Contact Person Content-->
+                                    <div class="step-content">
+                                        <!-- Nama -->
+                                        <div class="field">
+                                            <label class="label">Nama</label>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input class="input" type="text" placeholder="e.g. Partnership opportunity">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End of Nama -->
+                                        <!-- Nomor Telepon & Email -->
+                                        <div class="columns">
+                                            <div class="column">
+                                                <div class="field">
+                                                    <label class="label">Nomor Telepon</label>
+                                                    <div class="field-body">
+                                                        <div class="field">
+                                                            <p class="control is-expanded has-icons-left">
+                                                                <input class="input" type="text" placeholder="Name">
+                                                                <span class="icon is-small is-left">
+                                                                    <i class="fa fa-user"></i>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="column">
+                                                <div class="field">
+                                                    <label class="label">Email</label>
+                                                    <div class="field-body">
+                                                        <div class="field">
+                                                            <p class="control is-expanded has-icons-left">
+                                                                <input class="input" type="text" placeholder="Name">
+                                                                <span class="icon is-small is-left">
+                                                                    <i class="fa fa-user"></i>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End of Nomor Telepon & Email -->
+                                        <!-- Posisi/Jabatan -->
+                                        <div class="field">
+                                            <label class="label">Posisi/Jabatan</label>
+                                            <div class="field-body">
+                                                <div class="field is-expanded">
+                                                    <div class="control">
+                                                        <div class="select is-fullwidth">
+                                                            <select>
+                                                                <option>CEO</option>
+                                                                <option>Business development</option>
+                                                                <option>Marketing</option>
+                                                                <option>Sales</option>
+                                                                <option>Lainnya</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End of Posisi/Jabatan -->                                        
+                                        <!-- Checkbox Contact Person Content -->
+                                        <label class="checkbox">
+                                            <input type="checkbox"> Dengan ini menyatakan
+                                            <span class="has-text-pink">
+                                                <i>bersedia</i>
+                                            </span> menjadi penganggung jawab pelaksanaan kegiatan
+                                        </label>
+                                        <!-- End of Checkbox Contact Person Content -->
+                                    </div>
+                                    <!-- End of Contact Person Content-->
+                                    <!-- Lowongan Pekerjaan Content -->
+                                    <div class="step-content">
+                                        <div class="field">
+                                            <label class="label">Lowongan yang ada
+                                                <span class="has-text-pink">*</span>
+                                            </label>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <p class="control is-expanded">
+                                                        <input class="input" type="text" placeholder="Name">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">Jumlah tenaga yang dibutuhkan
+                                                <span class="has-text-pink">*</span>
+                                            </label>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <p class="control is-expanded">
+                                                        <input class="input" type="text" placeholder="Name">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">Lulusan yang dibutuhkan
+                                                <span class="has-text-pink">*</span>
+                                            </label>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <p class="control is-expanded">
+                                                        <input class="input" type="text" placeholder="Name">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">Kualifikasi yang dibutuhkan
+                                                <span class="has-text-pink">*</span>
+                                            </label>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <p class="control is-expanded">
+                                                        <input class="input" type="text" placeholder="Name">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">Wilayah Penempatan
+                                                <span class="has-text-pink">*</span>
+                                            </label>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <p class="control is-expanded">
+                                                        <input class="input" type="text" placeholder="Name">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">Posisi/Jabatan
+                                                <span class="has-text-pink">*</span>
+                                            </label>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <p class="control is-expanded">
+                                                        <input class="input" type="text" placeholder="Name">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">Keterangan
+                                                <span class="has-text-pink">*</span>
+                                            </label>
+                                            <div class="field-body">
+                                                <div class="field">
+                                                    <p class="control is-expanded">
+                                                        <input class="input" type="text" placeholder="Name">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="has-text-pink">*</span> = tidak wajib diisi
+                                    </div>
+                                    <!-- End of Lowongan Pekerjaan Content-->
+                                    <!-- Finish Content -->
                                     <div class="step-content has-text-centered">
-                                        <div class="field is-horizontal">
-                                            <div class="field-label is-normal">
-                                                <label class="label">Firstname</label>
-                                            </div>
-                                            <div class="field-body">
-                                                <div class="field">
-                                                    <div class="control">
-                                                        <input class="input" name="firstname" id="firstname" type="text" placeholder="Firstname" autofocus data-validate="require">
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <h1 class="title is-4">Proses blabalba selesai blablalb</h1>
+                                    </div>
+                                    <!-- End of Finish Content -->
+                                    <br>
+                                    <!-- Steps Actions Prev Next -->
+                                    <div class="steps-actions">
+                                        <div class="steps-action">
+                                            <a href="#" data-nav="previous" class="button is-pink is-rounded">Kembali</a>
                                         </div>
-                                        <div class="field is-horizontal">
-                                            <div class="field-label is-normal">
-                                                <label class="label">Last name</label>
-                                            </div>
-                                            <div class="field-body">
-                                                <div class="field">
-                                                    <div class="control has-icon has-icon-right">
-                                                        <input class="input" type="text" name="lastname" id="lastname" placeholder="Last name" data-validate="require">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="field is-horizontal">
-                                            <div class="field-label is-normal">
-                                                <label class="label">Email</label>
-                                            </div>
-                                            <div class="field-body">
-                                                <div class="field">
-                                                    <div class="control has-icon has-icon-right">
-                                                        <input class="input" type="email" name="email" id="email" placeholder="Email" data-validate="require">
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="steps-action">
+                                            <a href="#" data-nav="next" class="button is-pink is-rounded">Berikutnya</a>
                                         </div>
                                     </div>
-                                    <div class="step-content has-text-centered">
-                                        <div class="field is-horizontal">
-                                            <div class="field-label is-normal">
-                                                <label class="label">Facebook account</label>
-                                            </div>
-                                            <div class="field-body">
-                                                <div class="field">
-                                                    <div class="control">
-                                                        <input class="input" name="facebook" id="facebook" type="text" placeholder="Facebook account url" autofocus data-validate="require">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="field is-horizontal">
-                                            <div class="field-label is-normal">
-                                                <label class="label">Twitter account</label>
-                                            </div>
-                                            <div class="field-body">
-                                                <div class="field">
-                                                    <div class="control">
-                                                        <input class="input" name="twitter" id="twitter" type="text" placeholder="Twitter account url" autofocus data-validate="require">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="step-content has-text-centered">
-                                        <h1 class="title is-4">Your account is now created !</h1>
-                                    </div>
-                                </div>
-                                <div class="steps-actions">
-                                    <div class="steps-action">
-                                        <a href="#" data-nav="previous" class="button is-pink is-rounded">Kembali</a>
-                                    </div>
-                                    <div class="steps-action">
-                                        <a href="#" data-nav="next" class="button is-pink is-rounded">Berikutnya</a>
-                                    </div>
+                                    <!-- End of Steps Actions Prev Next -->
                                 </div>
                             </div>
                         </div>
@@ -204,7 +377,7 @@
                 </div>
             </div>
         </section>
-        <!-- Intro -->
+        <!-- End of Steps -->
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
@@ -222,20 +395,10 @@
 
             // mengganti login button menjadi warna pink
             $("#loginButton").addClass("is-pink");
-            
+
             $("#logoJoints").attr("src", "http://joints.id/images/logo-pink.png");
         });
     </script>
-    <script type="text/javascript">
-        AOS.init();
-
-        $("#selengkapnya").click(function () {
-            $('html, body').animate({
-                scrollTop: $("#acara").offset().top
-            }, 1000);
-        });
-    </script>
-
 </body>
 
 </html>

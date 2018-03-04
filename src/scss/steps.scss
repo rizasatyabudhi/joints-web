@@ -27,6 +27,11 @@
                         }
                     }
                 }
+                .steps-content {
+                    &.box {
+                        padding: 2rem !important;
+                    }
+                }
             }
         }
     }

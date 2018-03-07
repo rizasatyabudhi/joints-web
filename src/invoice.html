@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <title>Joints</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/steps.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="app-header">
+        <nav class="navbar is-transparent">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="index.html">
+                        <img id="logoJoints" src="images/index/logo.png" alt="Logo">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+                <div id="navbarMenuHeroC" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item">
+                            IT Day
+                        </a>
+                        <a class="navbar-item">
+                            Tech Talk
+                        </a>
+                        <a class="navbar-item" href="kompetisi.html">
+                            Kompetisi
+                        </a>
+                        <a id="contact" class="navbar-item">
+                            Contact
+                        </a>
+                        <span class="navbar-item">
+                            <a id="loginButton" class="button is-inverted is-outlined" href="login.html">
+                                Log In
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main class="app-content-invoice">
+        <section class="hero is-fullheight is-invoice">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column is-10 is-offset-1">
+                            <div class="box">
+                                <h1 class="subtitle is-size-3"><i class="fa fa-credit-card has-text-pink"></i> INVOICE</h1>
+                                <hr>
+                                <div class="columns">
+                                    <div class="column is-6 has-text-left">
+                                        <h1 class="title is-size-4">PT. Qwerty Sejahtera</h1>
+                                        <p class="subtitle">Kamis, 15 Fwbruari 2018
+                                            <br> #ICD1A</p>
+                                    </div>
+                                    <div class="column is-6 has-text-right">
+                                        <p>Gedung ABC
+                                            <br> Jalan Sudirman No 2
+                                            <br> Jakarta Pusat
+                                            <br> 123455</p>
+                                    </div>
+                                </div>
+                                <div class="columns is-multiline" style="background: white">
+                                    <div class="column is-12">
+                                        <table class="table is-fullwidth is-narrow">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        Item
+                                                    </th>
+                                                    <th>
+                                                        QTY
+                                                    </th>
+                                                    <th>
+                                                        Harga
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Packet Standard Deluxe</th>
+                                                    <td>1</td>
+                                                    <td class="has-text-pink"><b>Rp 3.000.000</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <th></th>
+                                                    <td>Total Pembayaran</td>
+                                                    <td class="has-text-pink"><b>Rp 3.000.000</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <th></th>
+                                                    <td>Metode Pembayaran</td>
+                                                    <td>Bayar Langsung</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="column is-12">
+                                        <p class="has-text-right">
+                                            <small>
+                                                <span class="has-text-pink">*</span>Lorem ipsum dolor sit amet consectetur adipisicing.
+                                            </small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="js/steps.js"></script>
+    <script>
+        $(document).ready(function () {
+            // buka tutup navbar hamburger
+            $(".navbar-burger").click(function () {
+                $("#navbarMenuHeroC").toggleClass("is-active");
+                $(".navbar-burger > span").toggleClass("is-active");
+                $("#loginButton").removeClass("is-inverted");
+            });
+            // navbar
+            $(".navbar").addClass("is-fixed-top");
+            // login button
+            $("#loginButton").removeClass("is-inverted");
+            // mengganti login button menjadi warna pink
+            $("#loginButton").addClass("is-pink");
+
+            $("#logoJoints").attr("src", "http://joints.id/images/logo-pink.png");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+.app-content-steps section.is-steps .steps .step-item .step-details {
+  margin-top: 0;
+  margin-bottom: 2em; }
+  .app-content-steps section.is-steps .steps .step-item .step-details .step-title {
+    margin-top: -2.5rem; }
+
+.app-content-steps section.is-steps .steps .step-item .step-marker {
+  transition-delay: 0.5s; }
+
+.app-content-steps section.is-steps .steps .step-item.is-active .step-marker {
+  background-color: #fff;
+  border-color: #f06562;
+  color: #f06562; }
+
+.app-content-steps section.is-steps .steps .step-item.is-completed .step-marker {
+  color: #fff;
+  background-color: #f06562; }
+
+.app-content-steps section.is-steps .steps .steps-content.box {
+  padding: 2rem !important; }
+
+.steps .step-item::before {
+  background: linear-gradient(to left, #dbdbdb 50%, #f06562 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease; }
+
+.app-content-invoice section.is-invoice .box {
+  background-color: rgba(245, 62, 59, 0.1); }
+
+.app-content-invoice section.is-invoice table tbody tr:nth-last-child(2) td {
+  border: 0; }
+
+.app-content-invoice section.is-invoice table tbody tr:nth-last-child(2) th {
+  border: 0; }

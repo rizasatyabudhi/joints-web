@@ -16,14 +16,14 @@
                     &.is-active {
                         .step-marker {
                             background-color: #fff;
-                            border-color: $pink;
-                            color: $pink;
+                            border-color: #f06562;
+                            color: #f06562;
                         }
                     }
                     &.is-completed {
                         .step-marker {
                             color: #fff;
-                            background-color: $pink;
+                            background-color: #f06562;
                         }
                     }
                 }
@@ -34,7 +34,22 @@
                 }
             }
         }
+    }
+}
+
+.steps .step-item::before {
+    background: linear-gradient(to left, #dbdbdb 50%, #f06562 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease;
+}
+
+.app-content-invoice {
+    section {
         &.is-invoice {
+            .box {
+            background-color: rgba(245, 62, 59, 0.1);                
+            }
             table {
                 tbody {
                     tr:nth-last-child(2) {
@@ -48,19 +63,15 @@
                 }
             }
         }
-        &.is-login-perusahaan {
-            .input {
-                &.is-pink {
-                    border-color: none !important;
-                }
-            }
-        }     
     }
 }
 
-.steps .step-item::before {
-    background: linear-gradient(to left, #dbdbdb 50%, $pink 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: all 0.5s ease;
+.app-content-login-perusahaan {
+    &.is-login-perusahaan {
+        .input {
+            &.is-pink {
+                // border-color: none !important;
+            }
+        }
+    }
 }

@@ -9511,6 +9511,15 @@ label.panel-block {
 .app-content-steps section.is-steps .steps .steps-content.box {
   padding: 2rem !important; }
 
+.app-content-steps section.is-invoice table tbody tr:nth-last-child(2) td {
+  border: 0; }
+
+.app-content-steps section.is-invoice table tbody tr:nth-last-child(2) th {
+  border: 0; }
+
+.app-content-steps section.is-login-perusahaan .input.is-pink {
+  border-color: none !important; }
+
 .steps .step-item::before {
   background: linear-gradient(to left, #dbdbdb 50%, #f06562 50%);
   background-size: 200% 100%;

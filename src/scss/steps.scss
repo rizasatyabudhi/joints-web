@@ -34,6 +34,27 @@
                 }
             }
         }
+        &.is-invoice {
+            table {
+                tbody {
+                    tr:nth-last-child(2) {
+                        td {
+                            border: 0;
+                        }
+                        th {
+                            border: 0;
+                        }
+                    }
+                }
+            }
+        }
+        &.is-login-perusahaan {
+            .input {
+                &.is-pink {
+                    border-color: none !important;
+                }
+            }
+        }     
     }
 }
 

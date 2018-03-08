@@ -25,11 +25,40 @@
   background-position: right bottom;
   transition: all 0.5s ease; }
 
-.app-content-invoice section.is-invoice .box {
-  background-color: rgba(245, 62, 59, 0.1); }
+.app-content-invoice section.is-invoice {
+  background: url(../images/waves-skew.png);
+  background-size: 100%, cover, cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+  .app-content-invoice section.is-invoice .box {
+    background-color: rgba(245, 62, 59, 0.1); }
+  .app-content-invoice section.is-invoice table {
+    margin-bottom: 0; }
+    .app-content-invoice section.is-invoice table tbody tr:nth-last-child(2) td {
+      border: 0; }
+    .app-content-invoice section.is-invoice table tbody tr:nth-last-child(2) th {
+      border: 0; }
 
-.app-content-invoice section.is-invoice table tbody tr:nth-last-child(2) td {
-  border: 0; }
+.app-content-login-perusahaan section.is-login-perusahaan {
+  background: url(../images/waves-skew.png);
+  background-size: 100%, cover, cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
 
-.app-content-invoice section.is-invoice table tbody tr:nth-last-child(2) th {
-  border: 0; }
+.app-content-register-perusahaan section.is-register-perusahaan {
+  background: url(../images/waves-skew.png);
+  background-size: 100%, cover, cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+
+.app-content-konfirmasi-institusi section.is-konfirmasi-institusi {
+  background: url(../images/waves-skew.png);
+  background-size: 100%, cover, cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+
+.app-content-konfirmasi-institusi-waiting section.is-konfirmasi-institusi-waiting {
+  background: url(../images/waves-skew.png);
+  background-size: 100%, cover, cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }

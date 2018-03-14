@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <!-- START NAV -->
+  <header class="app-navbar-dashboard">
+    <nav class="navbar is-transparent">
+      <div class="navbar-brand">
+        <a id="hamburgerMenu" class="fa fa-bars navbar-item is-narrow-mobile is-fullheight is-hidden-mobile">
+        </a>
+        <a class="navbar-item">
+          <img src="images/logo-hijau.png" alt="Logo">
+        </a>
+        <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenuHeroC" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item is-hidden-tablet">
+            Beranda
+          </a>
+          <a class="navbar-item is-hidden-tablet">
+            Pembayaran
+          </a>
+          <a class="navbar-item is-hidden-tablet">
+            Data Tim
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable is-hidden-tablet">
+            <a class="navbar-link">
+              Pengumuman
+            </a>
+            <div class="navbar-dropdown is-right">
+              <a class="navbar-item" href="/documentation/overview/start/">
+                Daftar Pengumuman
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                Tambah Pengumuman
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable is-hidden-tablet">
+            <a class="navbar-link">
+              FAQ
+            </a>
+            <div class="navbar-dropdown is-right">
+              <a class="navbar-item" href="/documentation/overview/start/">
+                Daftar FAQ
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                Tambah FAQ
+              </a>
+            </div>
+          </div>
+          <a class="navbar-item is-hidden-tablet">
+            Chat
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-item" href="/documentation/overview/start/">
+              <span class="badge is-badge-danger" data-badge="1">
+                <i class="fa fa-bell-o fa-fw"></i>
+              </span>
+            </a>
+            <div class="navbar-dropdown is-right">
+              <a class="navbar-item" href="/2017/11/14/bulma-is-on-patreon/">
+                <div class="navbar-content">
+                  <p>
+                    <small class="has-text-link">14 Nov 2017</small>
+                  </p>
+                  <p>Bulma is on Patreon!</p>
+                </div>
+              </a>
+
+              <a class="navbar-item" href="/2017/11/01/fixed-navbar/">
+                <div class="navbar-content">
+                  <p>
+                    <small class="has-text-link">01 Nov 2017</small>
+                  </p>
+                  <p>New feature: fixed navbar</p>
+                </div>
+              </a>
+
+              <a class="navbar-item" href="/2017/10/22/list-of-buttons/">
+                <div class="navbar-content">
+                  <p>
+                    <small class="has-text-link">22 Oct 2017</small>
+                  </p>
+                  <p>New feature: list of buttons</p>
+                </div>
+              </a>
+
+              <a class="navbar-item" href="https://bulma.io/blog/">
+                More posts
+              </a>
+              <hr class="navbar-divider">
+              <div class="navbar-item">
+                <div class="navbar-content">
+                  <div class="level is-mobile">
+                    <div class="level-left">
+                      <div class="level-item">
+                        <strong>Stay up to date!</strong>
+                      </div>
+                    </div>
+                    <div class="level-right">
+                      <div class="level-item">
+                        <a class="button bd-is-rss is-small is-light-green" href="https://bulma.io/atom.xml">
+                          <span class="icon is-small">
+                            <i class="fa fa-rss has-text-white"></i>
+                          </span>
+                          <span>Subscribe</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="/documentation/overview/start/">
+              <figure class="image is-32x32" style="margin-right:.5em;">
+                <img src="https://lh3.googleusercontent.com/-HqtRKk8CI_Y/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT7BMTqURpGoFnEZZi68CIEGKv5QtA/mo/photo.jpg?sz=46">
+              </figure>
+              Tim Satu
+            </a>
+            <div class="navbar-dropdown is-right">
+              <a class="navbar-item" href="/documentation/overview/start/">
+                Settings
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                Sign Out
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- END NAV -->
+  <!-- MAIN & SIDE NAV -->
+  <main class="app-main-pcs">
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="columns">
+          <!-- Sidenav -->
+          <div id="sideNav" class="column is-2 is-narrow-mobile is-fullheight section is-hidden-mobile">
+            <aside class="menu hero is-fullheight is-fixed">
+              <ul class="menu-list">
+                <li>
+                  <a href="#" class="is-active">
+                    <i class="fa fa-circle"></i> Soal 1
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-circle-o"></i>
+                    Soal 2
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Soal 3
+                  </a>
+                </li>
+                <li>
+                  <a class="has-text-centered" href="#">
+                    <i class="fa fa-circle"></i>
+                    Soal 4
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Soal 5
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Soal 6
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Soal 7
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Soal 8
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Soal 9
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Soal 10
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Soal 11
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Soal 12
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Soal 13
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Soal 14
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Soal 15
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Soal 16
+                  </a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+          <!-- End of Sidenav -->
+          <!-- Main -->
+          <div class="column">
+            <section class="main">
+              <div class="columns">
+                <!-- Rekap Peserta Joints -->
+                <div class="column is-10 is-offset-1">
+                  <h1 class="subtitle">Soal 1</h1>                  
+                  <div class="box">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae architecto ullam nobis vitae voluptate deserunt cumque at
+                    consequatur? Nesciunt reprehenderit mollitia cumque. Architecto odit repellendus soluta recusandae expedita
+                    iusto quis.
+                    <br>
+                    <br>
+                    <div class="control">
+                      <label class="radio button is-light-green">
+                        <input type="radio" name="answer">
+                        <p>
+                          Hohoh Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga eius non iure consectetur nesciunt, laboriosam harum
+                          sapiente rem minus laudantium odit soluta tenetur aspernatur porro consequatur libero reiciendis
+                          aliquam ex?
+                        </p>
+                      </label>
+                      <label class="radio button is-light-green">
+                        <input type="radio" name="answer">
+                        <p>
+                          Mantap Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, labore maiores magni fugit necessitatibus pariatur possimus
+                          excepturi repudiandae ab sit quia explicabo recusandae nam tenetur repellendus! Possimus dolorem
+                          ab illo.
+                        </p>
+                      </label>
+                      <label class="radio button is-light-green">
+                        <input type="radio" name="answer">
+                        <p>
+                          Wededew
+                        </p>
+                      </label>
+
+                      <label class="radio button is-light-green">
+                        <input type="radio" name="answer">
+                        <p>
+                          Uwadaw Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore magni reprehenderit explicabo suscipit nulla laborum,
+                          velit provident nesciunt officiis qui vitae incidunt dignissimos reiciendis officia quasi accusamus
+                          magnam ab assumenda!
+                        </p>
+                      </label>
+                    </div>
+                    <!-- Main container -->
+                    <nav class="level">
+                      <!-- Left side -->
+                      <!-- <!-- <div class="level-left">
+                          <p class="level-item">
+                              <a href="#" class="button">Submit</a>
+                            </p>
+                      </div> -->
+  
+                      <!-- Right side -->
+                      <div class="level-right">
+                        <p class="level-item">
+                          <a href="#" class="button">Prev</a>
+                        </p>
+                      </div>
+                    </nav>                    
+                  </div>
+                  <!-- Main container -->
+                  <nav class="level">
+                    <!-- Left side -->
+                    <!-- <div class="level-left">
+                        <p class="level-item">
+                            <a href="#" class="button">Submit</a>
+                          </p>
+                    </div> -->
+
+                    <!-- Right side -->
+                    <div class="level-right">
+                      <p class="level-item">
+                        <a href="#" class="button">Prev</a>
+                      </p>
+                      <p class="level-item">
+                        <a href="#" class="button">Next</a>
+                      </p>
+                    </div>
+                  </nav>
+
+                  <!-- <a class="button is-outlined is-primary"> <span>A</span> Normal </a> -->
+                </div>
+                <!-- End of Rekap Peserta Joints -->
+              </div>
+              <div id="log"></div>
+            </section>
+          </div>
+          <!-- End of Main -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- END MAIN & SIDE NAV -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script>
+    $("label").on("click", function () {
+      // $(this).toggleClass('is-checked');
+      // if ($(this).click) {
+      //   $(this).addClass("is-active")      
+      // } else {
+      //   $(this).removeClass("is-active")
+
+      // }
+      // if ($("input:checked")) {
+      //   $(this).addClass("is-active")
+      // } 
+      //else if (!$("input:checked")) {
+      //   $(this).removeClass("is-active")
+      // }
+    });
+  </script>
+</body>
+
+</html>

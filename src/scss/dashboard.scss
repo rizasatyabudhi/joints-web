@@ -1,10 +1,9 @@
 @import "node_modules/bulma/sass/utilities/mixins";
 @import "node_modules/bulma/sass/utilities/initial-variables";
 @import "node_modules/bulma-extensions/bulma-badge/bulma-badge";
-
 html,
 body {
-    background-color: #F5F8FA;
+    background-color: #F5F8FA !important;
 }
 
 .app-navbar-dashboard {
@@ -279,7 +278,105 @@ body {
                 box-shadow: 0 10px 30px 0 rgba(229, 238, 242, .5);
                 border-radius: 2px;
                 &.notification {
-                    box-shadow: 0 10px 30px 0 rgba(229,238,242,.5);
+                    box-shadow: 0 10px 30px 0 rgba(229, 238, 242, .5);
+                    border-radius: 2px;
+                }
+            }
+            .table {
+                .is-selected {
+                    background-color: #65cb67;
+                }
+            }
+            .pagination {
+                a {
+                    color: #65cb67;
+                    &.is-current {
+                        background: #65cb67;
+                        color: white;
+                    }
+                }
+            }
+            figure {
+                margin: 0 auto;
+                position: relative;
+                img {
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+.app-main-pcs {
+    overflow: hidden;
+    .column {
+        .menu {
+            padding-top: 80px;
+            background-color: #fff;
+            box-shadow: 0 10px 30px 0 rgba(229, 238, 242, .5);
+            position: absolute;
+            left: 0;
+            overflow-y: auto;
+            .menu-list {
+                li {
+                    a {
+                        padding-left: 10px;
+                        border-left: 6px solid #fff;
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                        &.is-active {
+                            border-left: 6px solid #65cb67;
+                            color: #65cb67;
+                        }
+                        &:hover {
+                            border-left: 6px solid #65cb67;
+                            color: #65cb67;
+                        }
+                    }
+                    ul {
+                        margin-left: 18px;
+                        li {
+                            a {
+                                border-left: none;
+                                &.is-active {
+                                    border-left: none;
+                                    color: #65cb67;
+                                }
+                                &:hover {
+                                    border-left: none;
+                                    color: #65cb67;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .menu-footer {
+                padding-left: 24px;
+                p {
+                    a {
+                        margin-right: 5px;
+                    }
+                    &:nth-child(1) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            &.is-fixed {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                width: 16.66667%;
+            }
+        }
+        .main {
+            padding-top: 28px;
+            background-color: #F5F8FA;
+            .box {
+                box-shadow: 0 10px 30px 0 rgba(229, 238, 242, .5);
+                border-radius: 2px;
+                &.notification {
+                    box-shadow: 0 10px 30px 0 rgba(229, 238, 242, .5);
                     border-radius: 2px;
                 }
             }
@@ -299,5 +396,31 @@ body {
             }
         }
     }
+    .control {
+       
+        label {
+            &.radio {
+                display: block;
+                margin-left: 25px;
+                margin-bottom: 10px;
+            }
+            &.button {
+                height: auto;
+                white-space: inherit;
+                text-align: left !important;
+            }
+            input[type="radio"] {
+                position: absolute;
+                margin-left: -40px;
+                display: block;
+            }
+            input:checked ~ p {
+                border: 1px dashed #fff;
+                padding: 4px;
+            }
+            input ~ p {
+                padding: 5px;                
+            }
+        }
+    }
 }
-@import "node_modules/bulma/bulma";

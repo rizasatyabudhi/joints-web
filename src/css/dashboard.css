@@ -512,3 +512,26 @@ body {
     padding: 4px; }
   .app-main-pcs .control label input ~ p {
     padding: 5px; }
+
+.tabs ul li.is-active a {
+  color: #65cb67;
+  border-bottom-color: #65cb67; }
+
+.tabs ul li:hover a {
+  color: #65cb67;
+  border-bottom-color: #65cb67; }
+
+#tab-content > .column {
+  display: none; }
+
+#tab-content > .column.is-active {
+  display: block; }
+
+input[type=text]:focus {
+  border: 1px solid #65cb67 !important; }
+
+textarea:focus {
+  border: 1px solid #65cb67 !important; }
+
+select:focus {
+  border: 1px solid #65cb67 !important; }

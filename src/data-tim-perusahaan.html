@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+</head>
+
+<body>
+  <!-- START NAV -->
+  <header class="app-navbar-dashboard">
+    <nav class="navbar is-transparent">
+      <div class="navbar-brand">
+        <a id="hamburgerMenu" class="fa fa-bars navbar-item is-narrow-mobile is-fullheight is-hidden-mobile">
+        </a>
+        <a class="navbar-item">
+          <img src="images/logo-hijau.png" alt="Logo">
+        </a>
+        <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenuHeroC" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item is-hidden-tablet">
+            Beranda
+          </a>
+          <a class="navbar-item is-hidden-tablet">
+            Pembayaran
+          </a>
+          <a class="navbar-item is-hidden-tablet">
+            Data Tim
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable is-hidden-tablet">
+            <a class="navbar-link">
+              Pengumuman
+            </a>
+            <div class="navbar-dropdown is-right">
+              <a class="navbar-item" href="/documentation/overview/start/">
+                Daftar Pengumuman
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                Tambah Pengumuman
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable is-hidden-tablet">
+            <a class="navbar-link">
+              FAQ
+            </a>
+            <div class="navbar-dropdown is-right">
+              <a class="navbar-item" href="/documentation/overview/start/">
+                Daftar FAQ
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                Tambah FAQ
+              </a>
+            </div>
+          </div>
+          <a class="navbar-item is-hidden-tablet">
+            Chat
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-item" href="/documentation/overview/start/">
+              <span class="badge is-badge-danger" data-badge="1">
+                <i class="fa fa-bell-o fa-fw"></i>
+              </span>
+            </a>
+            <div class="navbar-dropdown is-right">
+              <a class="navbar-item" href="/2017/11/14/bulma-is-on-patreon/">
+                <div class="navbar-content">
+                  <p>
+                    <small class="has-text-link">14 Nov 2017</small>
+                  </p>
+                  <p>Bulma is on Patreon!</p>
+                </div>
+              </a>
+
+              <a class="navbar-item" href="/2017/11/01/fixed-navbar/">
+                <div class="navbar-content">
+                  <p>
+                    <small class="has-text-link">01 Nov 2017</small>
+                  </p>
+                  <p>New feature: fixed navbar</p>
+                </div>
+              </a>
+
+              <a class="navbar-item" href="/2017/10/22/list-of-buttons/">
+                <div class="navbar-content">
+                  <p>
+                    <small class="has-text-link">22 Oct 2017</small>
+                  </p>
+                  <p>New feature: list of buttons</p>
+                </div>
+              </a>
+
+              <a class="navbar-item" href="https://bulma.io/blog/">
+                More posts
+              </a>
+              <hr class="navbar-divider">
+              <div class="navbar-item">
+                <div class="navbar-content">
+                  <div class="level is-mobile">
+                    <div class="level-left">
+                      <div class="level-item">
+                        <strong>Stay up to date!</strong>
+                      </div>
+                    </div>
+                    <div class="level-right">
+                      <div class="level-item">
+                        <a class="button bd-is-rss is-small is-light-green" href="https://bulma.io/atom.xml">
+                          <span class="icon is-small">
+                            <i class="fa fa-rss has-text-white"></i>
+                          </span>
+                          <span>Subscribe</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="/documentation/overview/start/">
+              <figure class="image is-32x32" style="margin-right:.5em;">
+                <img src="https://lh3.googleusercontent.com/-HqtRKk8CI_Y/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT7BMTqURpGoFnEZZi68CIEGKv5QtA/mo/photo.jpg?sz=46">
+              </figure>
+              Tim Satu
+            </a>
+            <div class="navbar-dropdown is-right">
+              <a class="navbar-item" href="/documentation/overview/start/">
+                Settings
+              </a>
+              <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                Sign Out
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- END NAV -->
+  <!-- MAIN & SIDE NAV -->
+  <main class="app-main-dashboard">
+    <section class="section">
+      <div class="columns">
+        <!-- SIDE NAV -->
+        <div id="sideNav" class="column is-2 is-narrow-mobile is-fullheight section is-hidden-mobile">
+          <aside class="menu hero is-fullheight is-fixed">
+            <ul class="menu-list">
+              <li>
+                <a href="admin-dashboard.html">
+                  <i class="fa fa-home fa-fw"></i>
+                  Beranda
+                </a>
+              </li>
+              <li>
+                <a href="admin-pembayaran.html">
+                  <i class="fa fa-credit-card fa-fw"></i>
+                  Pembayaran
+                </a>
+              </li>
+              <li>
+                <a class="is-active" href="admin-data-tim.html">
+                  <i class="fa fa-pencil-square-o fa-fw"></i>
+                  Data Perusahaan
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="fa fa-bullhorn fa-fw"></i>
+                  Pengumuman
+                </a>
+                <ul>
+                  <li>
+                    <a class="is-size-8">Daftar Pengumuman</a>
+                  </li>
+                  <li>
+                    <a class="is-size-8">Tambah Pengumuman</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a>
+                  <i class="fa fa-question-circle-o fa-fw"></i>
+                  FAQ
+                </a>
+                <ul>
+                  <li>
+                    <a class="is-size-8">Daftar FAQ</a>
+                  </li>
+                  <li>
+                    <a class="is-size-8">Tambah FAQ</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a>
+                  <i class="fa fa-comments-o fa-sw"></i>
+                  Chat
+                </a>
+              </li>
+            </ul>
+            <div class="menu-footer has-text-left">
+              <p>
+                <a class="has-text-light-green" href="https://facebook.com/jointsugm" class="">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a class="has-text-light-green" href="https://instagram.com/jointsugm" class="">
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a class="has-text-light-green" href="https://twitter.com/jointsugm" class="">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a class="has-text-light-green" href="https://www.linkedin.com/company/13177165" class="">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </p>
+              <p>© 2018 Joints UGM</p>
+              <br>
+            </div>
+          </aside>
+        </div>
+        <!-- SIDE NAV END-->
+        <div class="column">
+          <div class="main">
+            <div class="tabs is-fullwidth">
+              <ul id="tabs">
+                <li class="is-active" data-tab="1">
+                  <a>Edit Data Perusahaan</a>
+                </li>
+                <li data-tab="2">
+                  <a>Edit Data Contact Person</a>
+                </li>
+                <li data-tab="3">
+                  <a>Edit Data Lowongan Kerja</a>
+                </li>
+              </ul>
+            </div>
+            <div class="columns" id="tab-content">
+              <!-- Contact Perusahaan -->
+              <div class="column is-active" data-content="1">
+                <div class="box">
+                  <section>
+                    <!-- Nama & Nomor Telp/Fax -->
+                    <div class="columns">
+                      <div class="column">
+                        <div class="field">
+                          <label class="label">Nama Perusahaan</label>
+                          <div class="field-body">
+                            <div class="field">
+                              <p class="control is-expanded">
+                                <input class="input" placeholder="Name" type="text">
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="field">
+                          <label class="label">Nomor Telepon/Fax</label>
+                          <div class="field-body">
+                            <div class="field">
+                              <p class="control is-expanded">
+                                <input class="input" placeholder="Name" type="text">
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Nama & Nomor Telp/Fax -->
+                    <!-- Alamat Perusahaan -->
+                    <div class="field">
+                      <label class="label">Alamat Perusahaan</label>
+                      <div class="field-body">
+                        <div class="field">
+                          <div class="control">
+                            <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Alamat Perusahaan -->
+                    <!-- Stand & Pembayaran -->
+                    <div class="columns">
+                      <div class="column">
+                        <div class="field">
+                          <label class="label">Pilih Stand</label>
+                          <div class="field-body">
+                            <div class="field is-expanded">
+                              <div class="control">
+                                <div class="select is-fullwidth">
+                                  <select>
+                                    <option>Standard</option>
+                                    <option>Deluxe</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="field">
+                          <label class="label">Pembayaran</label>
+                          <div class="field-body">
+                            <div class="field is-expanded">
+                              <div class="control">
+                                <div class="select is-fullwidth">
+                                  <select>
+                                    <option>Transfer</option>
+                                    <option>Bayar Langsung</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Stand & Pembayaran -->
+                    <!-- Checkbox Info Perusahaan Content -->
+                    <label class="checkbox">
+                      <input type="checkbox"> Dengan ini menyatakan
+                      <span class="has-text-pink">
+                        <i>bersedia</i>
+                      </span> mengikuti kegiatan Career Day JOINTS 2018
+                    </label>
+                    <!-- End of Checkbox Info Perusahaan Content -->
+                    <br>
+                    <br>
+                    <!-- Simpan Edit Data Perusahaan -->
+                    <nav class="level">
+                      <!-- Left side -->
+                      <div class="level-left">
+                      </div>
+                      <!-- Right side -->
+                      <div class="level-right">
+                        <a href="" class="button is-rounded is-light-green is-right">Simpan</a>
+                      </div>
+                    </nav>
+                    <!-- Simpan Edit Data Perusahaan End -->
+                  </section>
+                </div>
+              </div>
+              <!-- Contact Perusahaan -->
+              <!-- Contact Person -->
+              <div class="column" data-content="2">
+                <div class="box">
+                  <section>
+                    <!-- Nama -->
+                    <div class="field">
+                      <label class="label">Nama</label>
+                      <div class="field-body">
+                        <div class="field">
+                          <div class="control">
+                            <input class="input" placeholder="e.g. Partnership opportunity" type="text">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Nama -->
+                    <!-- Nomor Telepon & Email -->
+                    <div class="columns">
+                      <div class="column">
+                        <div class="field">
+                          <label class="label">Nomor Telepon</label>
+                          <div class="field-body">
+                            <div class="field">
+                              <p class="control is-expanded">
+                                <input class="input" placeholder="Name" type="text">
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="field">
+                          <label class="label">Email</label>
+                          <div class="field-body">
+                            <div class="field">
+                              <p class="control is-expanded">
+                                <input class="input" placeholder="Name" type="text">
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Nomor Telepon & Email -->
+                    <!-- Posisi/Jabatan -->
+                    <div class="field">
+                      <label class="label">Posisi/Jabatan</label>
+                      <div class="field-body">
+                        <div class="field is-expanded">
+                          <div class="control">
+                            <div class="select is-fullwidth">
+                              <select>
+                                <option>CEO</option>
+                                <option>Business development</option>
+                                <option>Marketing</option>
+                                <option>Sales</option>
+                                <option>Lainnya</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Posisi/Jabatan -->
+                    <!-- Checkbox Contact Person Content -->
+                    <label class="checkbox">
+                      <input type="checkbox"> Dengan ini menyatakan
+                      <span class="has-text-pink">
+                        <i>bersedia</i>
+                      </span> menjadi penganggung jawab pelaksanaan kegiatan
+                    </label>
+                    <!-- End of Checkbox Contact Person Content -->
+                    <!-- Simpan Edit Contact Person -->
+                    <nav class="level">
+                        <!-- Left side -->
+                        <div class="level-left">
+                        </div>
+                        <!-- Right side -->
+                        <div class="level-right">
+                          <a href="" class="button is-rounded is-light-green is-right">Simpan</a>
+                        </div>
+                      </nav>
+                      <!-- Simpan Edit Contact Person End -->
+                  </section>
+                </div>
+              </div>
+              <!-- Contact Person End -->
+              <!-- Edit Data Lowongan -->
+              <div class="column" data-content="3">
+                <div class="box">
+                  <section>
+                    <div class="field">
+                      <label class="label">Lowongan yang ada
+                        <span class="has-text-pink">*</span>
+                      </label>
+                      <div class="field-body">
+                        <div class="field">
+                          <p class="control is-expanded">
+                            <input class="input" placeholder="Name" type="text">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <label class="label">Jumlah tenaga yang dibutuhkan
+                        <span class="has-text-pink">*</span>
+                      </label>
+                      <div class="field-body">
+                        <div class="field">
+                          <p class="control is-expanded">
+                            <input class="input" placeholder="Name" type="text">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <label class="label">Lulusan yang dibutuhkan
+                        <span class="has-text-pink">*</span>
+                      </label>
+                      <div class="field-body">
+                        <div class="field">
+                          <p class="control is-expanded">
+                            <input class="input" placeholder="Name" type="text">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <label class="label">Kualifikasi yang dibutuhkan
+                        <span class="has-text-pink">*</span>
+                      </label>
+                      <div class="field-body">
+                        <div class="field">
+                          <p class="control is-expanded">
+                            <input class="input" placeholder="Name" type="text">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <label class="label">Wilayah Penempatan
+                        <span class="has-text-pink">*</span>
+                      </label>
+                      <div class="field-body">
+                        <div class="field">
+                          <p class="control is-expanded">
+                            <input class="input" placeholder="Name" type="text">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <label class="label">Posisi/Jabatan
+                        <span class="has-text-pink">*</span>
+                      </label>
+                      <div class="field-body">
+                        <div class="field">
+                          <p class="control is-expanded">
+                            <input class="input" placeholder="Name" type="text">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <label class="label">Keterangan
+                        <span class="has-text-pink">*</span>
+                      </label>
+                      <div class="field-body">
+                        <div class="field">
+                          <p class="control is-expanded">
+                            <input class="input" placeholder="Name" type="text">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="has-text-pink">*</span> = tidak wajib diisi
+                    <!-- Simpan Edit Lowongan Kerja -->
+                    <nav class="level">
+                      <!-- Left side -->
+                      <div class="level-left">
+                      </div>
+                      <!-- Right side -->
+                      <div class="level-right">
+                        <a href="" class="button is-rounded is-light-green is-right">Simpan</a>
+                      </div>
+                    </nav>
+                    <!-- Simpan Edit Lowongan Kerja End -->
+                  </section>
+                </div>
+              </div>
+              <!-- Edit Data Lowongan Ebd -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+
+
+</html>

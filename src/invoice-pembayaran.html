@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard | Pembayaran</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- START NAV -->
+    <header class="app-navbar-dashboard">
+        <nav class="navbar is-transparent">
+            <div class="navbar-brand">
+                <a id="hamburgerMenu" class="fa fa-bars navbar-item is-narrow-mobile is-fullheight is-hidden-mobile">
+                </a>
+                <a class="navbar-item">
+                    <img src="images/logo-hijau.png" alt="Logo">
+                </a>
+                <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navbarMenuHeroC" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item is-hidden-tablet">
+                        Beranda
+                    </a>
+                    <a class="navbar-item is-hidden-tablet">
+                        Pembayaran
+                    </a>
+                    <a class="navbar-item is-hidden-tablet">
+                        Data Tim
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable is-hidden-tablet">
+                        <a class="navbar-link">
+                            Pengumuman
+                        </a>
+                        <div class="navbar-dropdown is-right">
+                            <a class="navbar-item" href="/documentation/overview/start/">
+                                Daftar Pengumuman
+                            </a>
+                            <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                                Tambah Pengumuman
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable is-hidden-tablet">
+                        <a class="navbar-link">
+                            FAQ
+                        </a>
+                        <div class="navbar-dropdown is-right">
+                            <a class="navbar-item" href="/documentation/overview/start/">
+                                Daftar FAQ
+                            </a>
+                            <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                                Tambah FAQ
+                            </a>
+                        </div>
+                    </div>
+                    <a class="navbar-item is-hidden-tablet">
+                        Chat
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-item" href="/documentation/overview/start/">
+                            <span class="badge is-badge-danger" data-badge="1">
+                                <i class="fa fa-bell-o fa-fw"></i>
+                            </span>
+                        </a>
+                        <div class="navbar-dropdown is-right">
+                            <a class="navbar-item" href="/2017/11/14/bulma-is-on-patreon/">
+                                <div class="navbar-content">
+                                    <p>
+                                        <small class="has-text-link">14 Nov 2017</small>
+                                    </p>
+                                    <p>Bulma is on Patreon!</p>
+                                </div>
+                            </a>
+
+                            <a class="navbar-item" href="/2017/11/01/fixed-navbar/">
+                                <div class="navbar-content">
+                                    <p>
+                                        <small class="has-text-link">01 Nov 2017</small>
+                                    </p>
+                                    <p>New feature: fixed navbar</p>
+                                </div>
+                            </a>
+
+                            <a class="navbar-item" href="/2017/10/22/list-of-buttons/">
+                                <div class="navbar-content">
+                                    <p>
+                                        <small class="has-text-link">22 Oct 2017</small>
+                                    </p>
+                                    <p>New feature: list of buttons</p>
+                                </div>
+                            </a>
+
+                            <a class="navbar-item" href="https://bulma.io/blog/">
+                                More posts
+                            </a>
+                            <hr class="navbar-divider">
+                            <div class="navbar-item">
+                                <div class="navbar-content">
+                                    <div class="level is-mobile">
+                                        <div class="level-left">
+                                            <div class="level-item">
+                                                <strong>Stay up to date!</strong>
+                                            </div>
+                                        </div>
+                                        <div class="level-right">
+                                            <div class="level-item">
+                                                <a class="button bd-is-rss is-small is-light-green" href="https://bulma.io/atom.xml">
+                                                    <span class="icon is-small">
+                                                        <i class="fa fa-rss has-text-white"></i>
+                                                    </span>
+                                                    <span>Subscribe</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link" href="/documentation/overview/start/">
+                            <figure class="image is-32x32" style="margin-right:.5em;">
+                                <img src="https://lh3.googleusercontent.com/-HqtRKk8CI_Y/AAAAAAAAAAI/AAAAAAAAAAA/AA6ZPT7BMTqURpGoFnEZZi68CIEGKv5QtA/mo/photo.jpg?sz=46">
+                            </figure>
+                            Tim Satu
+                        </a>
+                        <div class="navbar-dropdown is-right">
+                            <a class="navbar-item" href="/documentation/overview/start/">
+                                Settings
+                            </a>
+                            <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                                Sign Out
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- END NAV -->
+    <!-- MAIN & SIDE NAV -->
+    <main class="app-main-dashboard">
+        <section class="section">
+            <div class="columns">
+                <div id="sideNav" class="column is-2 is-narrow-mobile is-fullheight section is-hidden-mobile">
+                    <aside class="menu hero is-fullheight is-fixed">
+                        <ul class="menu-list">
+                            <li>
+                                <a href="admin-dashboard.html">
+                                    <i class="fa fa-home fa-fw"></i>
+                                    Beranda
+                                </a>
+                            </li>
+                            <li>
+                                <a class="is-active" href="admin-pembayaran.html">
+                                    <i class="fa fa-credit-card fa-fw"></i>
+                                    Pembayaran
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-data-tim.html">
+                                    <i class="fa fa-pencil-square-o fa-fw"></i>
+                                    Data Tim
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="fa fa-bullhorn fa-fw"></i>
+                                    Pengumuman
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a class="is-size-8">Daftar Pengumuman</a>
+                                    </li>
+                                    <li>
+                                        <a class="is-size-8">Tambah Pengumuman</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="fa fa-question-circle-o fa-fw"></i>
+                                    FAQ
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a class="is-size-8">Daftar FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a class="is-size-8">Tambah FAQ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>
+                                    <i class="fa fa-comments-o fa-sw"></i>
+                                    Chat
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="menu-footer has-text-left">
+                            <p>
+                                <a class="has-text-light-green" href="https://facebook.com/jointsugm" class="">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a class="has-text-light-green" href="https://instagram.com/jointsugm" class="">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a class="has-text-light-green" href="https://twitter.com/jointsugm" class="">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a class="has-text-light-green" href="https://www.linkedin.com/company/13177165" class="">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </p>
+                            <p>© 2018 Joints UGM</p>
+                            <br>
+                        </div>
+                    </aside>
+                </div>
+                <div class="column">
+                    <section class="main">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="box">
+                                    <h1 class="subtitle is-size-3">
+                                        <i class="fa fa-credit-card has-text-pink"></i> INVOICE</h1>
+                                    <hr>
+                                    <div class="columns">
+                                        <div class="column is-6 has-text-left">
+                                            <h1 class="title is-size-4">PT. Qwerty Sejahtera</h1>
+                                            <p class="subtitle">Kamis, 15 Fwbruari 2018
+                                                <br> #ICD1A</p>
+                                        </div>
+                                        <div class="column is-3 is-offset-3 has-text-right">
+                                            <p>Gedung ABC Jalan Sudirman No 2 Jakarta Pusat 123455</p>
+                                        </div>
+                                    </div>
+                                    <div class="columns is-multiline" style="background: white">
+                                        <div class="column is-12">
+                                            <table class="table is-fullwidth is-narrow">
+                                                <thead>
+                                                    <tr>
+                                                        <th>
+                                                            Item
+                                                        </th>
+                                                        <th>
+                                                            QTY
+                                                        </th>
+                                                        <th>
+                                                            Harga
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Packet Standard Deluxe</th>
+                                                        <td>1</td>
+                                                        <td class="has-text-pink">
+                                                            <b>Rp 3.000.000</b>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th></th>
+                                                        <td>Total Pembayaran</td>
+                                                        <td class="has-text-pink">
+                                                            <b>Rp 3.000.000</b>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th></th>
+                                                        <td>Metode Pembayaran</td>
+                                                        <td>Bayar Langsung</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="column is-12">
+                                            <p class="has-text-right">
+                                                <small>
+                                                    <span class="has-text-pink">*</span>Lorem ipsum dolor sit amet consectetur adipisicing.
+                                                </small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <article class="message is-danger">
+                                    <div class="message-body">
+                                        <center>
+                                            <div class="is-size-6 has-text-black-bis">Tagihan Registrasi Anda : </div>
+                                            <div class="is-size-3">
+                                                <strong>Rp 150.126</strong>
+                                            </div>
+                                            <div class="is-size-6 has-text-black-bis">Pendaftaran Reguler sampai :
+                                                <strong>
+                                                    23 March 2018
+                                                </strong>
+                                                <br>
+                                                <br> BCA
+                                                <strong>1640060731</strong> a/n
+                                                <strong>Muhammad Yudha Galang Fardana</strong>
+                                                <br> BNI
+                                                <strong>0257715686</strong> a/n
+                                                <strong>Putra Perdana Haryana</strong>
+                                                <br> MANDIRI
+                                                <strong>1200010468184</strong> a/n
+                                                <strong>Putri Rizki Amalia</strong>
+                                            </div>
+                                        </center>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- END MAIN & SIDE NAV -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>

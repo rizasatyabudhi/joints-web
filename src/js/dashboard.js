@@ -6,6 +6,13 @@ $(document).ready(function () {
         $(".navbar-item").addClass("has-text-success-reverse");
     });
 
+    $("#button-image-modal").click(function () {
+        $("#image-modal").addClass("is-active");
+    });
+    $("#close-modal-image").click(function () {
+        $("#image-modal").removeClass("is-active");        
+    })
+
     $("#hamburgerMenu").click(function () {
         $("#sideNav").toggleClass("is-toggle");
     });

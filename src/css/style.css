@@ -9159,6 +9159,9 @@ label.panel-block {
   .app-content section.is-sponsor-medpar .is-sponsor {
     text-align: center !important; } }
 
+.app-content section.is-sponsor-medpar .is-sponsor img {
+  max-height: 80px !important; }
+
 @media screen and (max-width: 768px) {
   .app-content section.is-sponsor-medpar .is-medpar {
     text-align: center !important; } }

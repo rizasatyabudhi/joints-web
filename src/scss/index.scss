@@ -252,6 +252,9 @@
         @include mobile {
           text-align: center !important;
         }
+        img {
+          max-height: 80px !important;
+        }
       }
       .is-medpar {
         @include mobile {

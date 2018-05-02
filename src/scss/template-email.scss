@@ -1,7 +1,7 @@
 @import "node_modules/bulma/sass/utilities/mixins";
 .is-template-email {
-    background-color: $pink;
-    background: linear-gradient(135deg, $pink, #e5487c);
+    background-color: #f06562;
+    background: linear-gradient(135deg, #f06562, #e5487c);
     &.change-password {
         background-color: #089d95;
         background: linear-gradient(300deg, #089d95, #65cb67);

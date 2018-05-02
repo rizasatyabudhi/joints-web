@@ -8,7 +8,8 @@ gulp.task("sass", function() {
     .src([
       "./src/scss/style.scss",
       "./src/scss/dashboard.scss",
-      "./src/scss/steps.scss"
+      "./src/scss/steps.scss",
+      "./src/scss/techtalk.scss"
     ])
     .pipe(sass().on("error", sass.logError))
     .pipe(gulp.dest("src/css"))

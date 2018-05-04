@@ -16,6 +16,7 @@
   "dependencies": {
     "bulma": "^0.6.1",
     "bulma-extensions": "^0.5.9",
+    "gulp-cli": "^2.0.1",
     "node-sass": "^4.7.2"
   }
 }
